@@ -109,4 +109,5 @@ data/*.tsv
 #*.ipynb_checkpoints
 #*.ipynb
 *.tsv
+*.csv
 __pycache__
