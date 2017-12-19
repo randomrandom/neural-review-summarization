@@ -110,4 +110,5 @@ data/*.tsv
 #*.ipynb
 *.tsv
 *.csv
+*.pkl
 __pycache__
