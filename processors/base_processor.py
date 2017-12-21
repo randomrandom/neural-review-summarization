@@ -11,7 +11,9 @@ __author__ = 'georgi.val.stoyan0v@gmail.com'
 
 class BaseProcessor(object):
     _DELIM_TSV = '\t'
-    _REVIEW_KEY = 'review'
+    _REVIEW_KEY = 'Review'
+    _PHRASE_KEY = 'Phrase'
+    _COUNT_KEY = 'Count'
     _REGEX_FILTER = r'\p{P}+'
     _ALLOWED_TAGS = {'JJ', 'JJ NN', 'JJ NNS', 'JJ NN NN', 'RB JJ NN', 'JJ TO VB', 'VB JJ NN'}
     _BANNED_WORDS = {'', 'br'}
@@ -82,7 +84,30 @@ class BaseProcessor(object):
         bigram_df = pd.read_csv(self._OUTPUT_DIRECTORY + self._BIGRAMS_FILE)
         trigram_df = pd.read_csv(self._OUTPUT_DIRECTORY + self._TRIGRAMS_FILE)
 
+        # TODO: we are loosing the count distributions after loading the model
+        # the items are a set rather than a list with repeating items as they
+        # used to be before saving the model
+        all_grams_counts = self._df_to_dict(all_gram_df)
+        self.all_grams = [n_gram for n_gram, count in all_grams_counts.items()]
+        unigrams_counts = self._df_to_dict(unigram_df)
+        self.unigrams = [n_gram for n_gram, count in unigrams_counts.items()]
+        bigrams_counts = self._df_to_dict(bigram_df)
+        self.bigrams = [n_gram for n_gram, count in bigrams_counts.items()]
+        trigrams_counts = self._df_to_dict(trigram_df)
+        self.trigrams = [n_gram for n_gram, count in trigrams_counts.items()]
+
         return all_gram_df, unigram_df, bigram_df, trigram_df
+
+    def _df_to_dict(self, df):
+        count_dict = {}
+
+        for i in range(len(df)):
+            string_phrase = df.iloc[i][self._PHRASE_KEY]
+            phrase_count = df.iloc[i][self._COUNT_KEY]
+
+            count_dict[string_phrase] = phrase_count
+
+        return count_dict
 
     @staticmethod
     def print_most_common(n_grams, most_common=100):
