@@ -9,18 +9,18 @@ from abc import abstractclassmethod
 __author__ = 'georgi.val.stoyan0v@gmail.com'
 
 
-class BasePreprocessor(object):
-    DELIM_TSV = '\t'
-    REVIEW_KEY = 'review'
-    REGEX_FILTER = r'\p{P}+'
-    ALLOWED_TAGS = {'JJ', 'JJ NN', 'JJ NNS', 'JJ NN NN', 'RB JJ NN', 'JJ TO VB', 'VB JJ NN'}
-    BANNED_WORDS = {'', 'br'}
+class BaseProcessor(object):
+    _DELIM_TSV = '\t'
+    _REVIEW_KEY = 'review'
+    _REGEX_FILTER = r'\p{P}+'
+    _ALLOWED_TAGS = {'JJ', 'JJ NN', 'JJ NNS', 'JJ NN NN', 'RB JJ NN', 'JJ TO VB', 'VB JJ NN'}
+    _BANNED_WORDS = {'', 'br'}
 
-    DIRECTORY = '/mnt/c/Users/gvs/ubuntu/neural-review-summarization/output/'
-    ALL_GRAMS_FILE = 'all_grams.csv'
-    UNIGRAMS_FILE = 'unigrams.csv'
-    BIGRAMS_FILE = 'bigrams.csv'
-    TRIGRAMS_FILE = 'trigrams.csv'
+    _OUTPUT_DIRECTORY = '/mnt/c/Users/gvs/ubuntu/neural-review-summarization/output/'
+    _ALL_GRAMS_FILE = 'all_grams.csv'
+    _UNIGRAMS_FILE = 'unigrams.csv'
+    _BIGRAMS_FILE = 'bigrams.csv'
+    _TRIGRAMS_FILE = 'trigrams.csv'
 
     def __init__(self, data_file):
         self._data_file = data_file
@@ -30,8 +30,8 @@ class BasePreprocessor(object):
         self.trigrams = []
         self.all_grams = []
 
-    def load_data(self, sep=DELIM_TSV):
-        df = pd.read_csv('../data/labeledTrainData.tsv', sep=sep)
+    def load_data(self, sep=_DELIM_TSV):
+        df = pd.read_csv(self._data_file, sep=sep)
         proper_df = self._reformat_data(df)
         self._data_frame = proper_df
 
@@ -42,20 +42,20 @@ class BasePreprocessor(object):
         raise NotImplementedError
 
     @abstractclassmethod
-    def get_data_set_name(self):
+    def _get_data_set_name(self):
         raise NotImplementedError
 
     def prepare_data(self):
         print('Generating n_grams')
         for i in tqdm(range(len(self._data_frame))):
-            words, tags = self._generate_words_and_tags(self._data_frame.iloc[i][self.REVIEW_KEY])
+            words, tags = self._generate_words_and_tags(self._data_frame.iloc[i][self._REVIEW_KEY])
 
             self.unigrams.extend(self._generate_n_grams(words, tags, 1)[0])
             self.bigrams.extend(self._generate_n_grams(words, tags, 2)[0])
             self.trigrams.extend(self._generate_n_grams(words, tags, 3)[0])
 
         print('Filtering n_grams')
-        self._prune_n_grams()
+        self.unigrams, self.bigrams, self.trigrams = self._prune_n_grams()
 
         self.all_grams.extend(self.unigrams)
         self.all_grams.extend(self.bigrams)
@@ -64,7 +64,7 @@ class BasePreprocessor(object):
 
     def save_n_grams(self):
         n_gram_counts = [Counter(self.all_grams), Counter(self.unigrams), Counter(self.bigrams), Counter(self.trigrams)]
-        n_gram_files = [self.ALL_GRAMS_FILE, self.UNIGRAMS_FILE, self.BIGRAMS_FILE, self.TRIGRAMS_FILE]
+        n_gram_files = [self._ALL_GRAMS_FILE, self._UNIGRAMS_FILE, self._BIGRAMS_FILE, self._TRIGRAMS_FILE]
 
         for i in range(len(n_gram_files)):
             n_gram_file = n_gram_files[i]
@@ -72,15 +72,15 @@ class BasePreprocessor(object):
 
             n_gram_df = pd.DataFrame.from_dict(n_gram_count, orient='index').reset_index()
             n_gram_df = n_gram_df.rename(columns={'index': 'Phrase', 0: 'Count'})
-            n_gram_df.to_csv(self.DIRECTORY + n_gram_file, encoding='utf-8')
+            n_gram_df.to_csv(self._OUTPUT_DIRECTORY + n_gram_file, encoding='utf-8')
 
         print('Saved n_gram files!')
 
     def load_n_grams(self):
-        all_gram_df = pd.read_csv(self.DIRECTORY + self.ALL_GRAMS_FILE)
-        unigram_df = pd.read_csv(self.DIRECTORY + self.UNIGRAMS_FILE)
-        bigram_df = pd.read_csv(self.DIRECTORY + self.BIGRAMS_FILE)
-        trigram_df = pd.read_csv(self.DIRECTORY + self.TRIGRAMS_FILE)
+        all_gram_df = pd.read_csv(self._OUTPUT_DIRECTORY + self._ALL_GRAMS_FILE)
+        unigram_df = pd.read_csv(self._OUTPUT_DIRECTORY + self._UNIGRAMS_FILE)
+        bigram_df = pd.read_csv(self._OUTPUT_DIRECTORY + self._BIGRAMS_FILE)
+        trigram_df = pd.read_csv(self._OUTPUT_DIRECTORY + self._TRIGRAMS_FILE)
 
         return all_gram_df, unigram_df, bigram_df, trigram_df
 
@@ -141,8 +141,8 @@ class BasePreprocessor(object):
         # pos tagging and filtering
         pos_tags = []
         for sentence in sentences:
-            split_words = [nltk.re.sub(self.REGEX_FILTER, '', x).lower() for x in sentence.split()]
-            words = self._filter_banned_words(split_words, self.BANNED_WORDS)
+            split_words = [nltk.re.sub(self._REGEX_FILTER, '', x).lower() for x in sentence.split()]
+            words = self._filter_banned_words(split_words, self._BANNED_WORDS)
             pos_tags.extend(nltk.pos_tag(words))
 
         # split words and tags
@@ -156,18 +156,18 @@ class BasePreprocessor(object):
         n_tags = None
 
         if n == 1:
-            n_grams, n_tags = self._filter_by_tags(words, tags, self.ALLOWED_TAGS)
+            n_grams, n_tags = self._filter_by_tags(words, tags, self._ALLOWED_TAGS)
         elif n == 2:
             bigrams = zip(words, words[1:])
             bitags = zip(tags, tags[1:])
 
             merged_bigrams, merged_bitags = self._merge_n_grams(bigrams, bitags)
-            n_grams, n_tags = self._filter_by_tags(merged_bigrams, merged_bitags, self.ALLOWED_TAGS)
+            n_grams, n_tags = self._filter_by_tags(merged_bigrams, merged_bitags, self._ALLOWED_TAGS)
         elif n == 3:
             trigrams = zip(words, words[1:], words[2:])
             tritags = zip(tags, tags[1:], tags[2:])
 
             merged_trigrams, merged_tritags = self._merge_n_grams(trigrams, tritags)
-            n_grams, n_tags = self._filter_by_tags(merged_trigrams, merged_tritags, self.ALLOWED_TAGS)
+            n_grams, n_tags = self._filter_by_tags(merged_trigrams, merged_tritags, self._ALLOWED_TAGS)
 
         return n_grams, n_tags
