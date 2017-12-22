@@ -21,7 +21,7 @@ class BaseModel(BaseEmbeddingsMixin):
         self._model = self._init_model()
 
     @abstractclassmethod
-    def train_model(self, n_grams):
+    def train_model(self, n_grams, model_name):
         raise NotImplementedError
 
     @abstractclassmethod
@@ -29,11 +29,11 @@ class BaseModel(BaseEmbeddingsMixin):
         raise NotImplementedError
 
     @abstractclassmethod
-    def save_model(self, save_dir):
+    def save_model(self, save_dir, model_name):
         raise NotImplementedError
 
     @abstractclassmethod
-    def load_model(self):
+    def load_model(self, model_name):
         raise NotImplementedError
 
     @staticmethod
@@ -49,26 +49,30 @@ class BaseModel(BaseEmbeddingsMixin):
         return self._model.labels_
 
     def clusters_count(self):
-        return list(set(self.cluster_labels()))
+        return len(list(set(self.cluster_labels())))
 
     def print_cluster_info(self):
         print('Number of clusters: {}'.format(self.clusters_count()))
 
-    @staticmethod
-    def generate_cluster_examples(meaning_labels, cluster_labels):
+    def generate_cluster_examples(self):
+        phrases = self.n_gram_meaning_labels
+        cluster_labels = self.cluster_labels()
+
         cluster_examples = {}
 
         for i in range(len(cluster_labels)):
             if cluster_labels[i] not in cluster_examples:
                 cluster_examples[cluster_labels[i]] = []
 
-            cluster_examples[cluster_labels[i]].append(meaning_labels[i])
+            cluster_examples[cluster_labels[i]].append(phrases[i])
 
         return cluster_examples
 
-    @staticmethod
-    def print_clusters_examples(cluster_examples, cluster_counts, k, show=30):
-        for pair in cluster_counts.most_common(k):
+    def print_clusters_examples(self, most_common=50, show=30):
+        cluster_examples = self.generate_cluster_examples()
+        cluster_counts = Counter(self.cluster_labels())
+
+        for pair in cluster_counts.most_common(most_common):
             cluster_label, _ = pair
 
             print('\nPrinting examples for cluster {}:'.format(cluster_label))

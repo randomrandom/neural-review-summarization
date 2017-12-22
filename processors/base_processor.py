@@ -1,4 +1,7 @@
+import string
+
 import nltk
+import regex as re
 import pandas as pd
 from tqdm import tqdm
 from nltk import sent_tokenize
@@ -11,10 +14,11 @@ __author__ = 'georgi.val.stoyan0v@gmail.com'
 
 class BaseProcessor(object):
     _DELIM_TSV = '\t'
-    _REVIEW_KEY = 'Review'
+    _REVIEW_KEY = 'review'
     _PHRASE_KEY = 'Phrase'
     _COUNT_KEY = 'Count'
-    _REGEX_FILTER = r'\p{P}+'
+    _REGEX_PUNCTUATION_FILTER = '[' + string.punctuation + ']'
+    _REGEX_FILTER = r'\p{P}+' # TODO: add a better regex
     _ALLOWED_TAGS = {'JJ', 'JJ NN', 'JJ NNS', 'JJ NN NN', 'RB JJ NN', 'JJ TO VB', 'VB JJ NN'}
     _BANNED_WORDS = {'', 'br'}
 
@@ -166,7 +170,10 @@ class BaseProcessor(object):
         # pos tagging and filtering
         pos_tags = []
         for sentence in sentences:
-            split_words = [nltk.re.sub(self._REGEX_FILTER, '', x).lower() for x in sentence.split()]
+            sentence = re.sub(self._REGEX_FILTER, '', sentence)
+            sentence = re.sub(self._REGEX_PUNCTUATION_FILTER, ' ', sentence)
+
+            split_words = [x.lower() for x in sentence.split()]
             words = self._filter_banned_words(split_words, self._BANNED_WORDS)
             pos_tags.extend(nltk.pos_tag(words))
 
