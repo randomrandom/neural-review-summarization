@@ -1,9 +1,7 @@
+import pickle
 from collections import Counter
-
 from abc import abstractclassmethod
-
 from sklearn.metrics.pairwise import cosine_distances
-from tqdm import tqdm
 
 from model.base_embeddings_mixin import BaseEmbeddingsMixin
 
@@ -11,8 +9,8 @@ __author__ = 'georgi.val.stoyan0v@gmail.com'
 
 
 class BaseModel(BaseEmbeddingsMixin):
-    def __init__(self, emb_directory, emb_file):
-        super().__init__(emb_directory, emb_file)
+    def __init__(self):
+        super().__init__()
 
         self.n_gram_meanings = None
         self.n_gram_meaning_labels = None
@@ -96,11 +94,31 @@ class BaseModel(BaseEmbeddingsMixin):
         self.n_gram_meaning_matrix = 1 - cosine_distances(self.n_gram_meanings)
 
     @staticmethod
+    def _load_scikit_model(directory, model_file):
+        print('Loading scikit model..')
+
+        with open(directory + model_file, 'rb') as model_file:
+            model = pickle.load(model_file)
+
+        print('Scikit model loaded.')
+
+        return model
+
+    @staticmethod
+    def _save_scikit_model(model, directory, model_file):
+        print('Saving scikit model...')
+
+        with open(directory + model_file, 'wb') as model_file:
+            pickle.dump(model, model_file, protocol=pickle.HIGHEST_PROTOCOL)
+
+        print('Scikit model saved.')
+
+    @staticmethod
     def print_phrase_and_clusters(phrases, cluster_labels, show=1000):
         for i in range(show):
             print(phrases[i], cluster_labels[i])
 
-    def get_phrases_in_good_clusters(self, predictions, phrases):
+    def get_clustered_predictions_and_counts(self, predictions, phrases):
         filtered_labels = []
 
         for i in range(len(predictions)):
@@ -113,11 +131,11 @@ class BaseModel(BaseEmbeddingsMixin):
 
         return phrases_count
 
-    def get_clustered_predictions_and_counts(self, predictions, phrases):
+    def get_phrases_in_good_clusters(self, predictions, phrases):
         clustered_predictions = {}
         clustered_predictions_weights = {}
 
-        phrases_count = self.get_phrases_in_good_clusters(predictions, phrases)
+        phrases_count = self.get_clustered_predictions_and_counts(predictions, phrases)
 
         for i in range(len(predictions)):
             test_prediction = predictions[i]
@@ -133,8 +151,8 @@ class BaseModel(BaseEmbeddingsMixin):
         return clustered_predictions, clustered_predictions_weights
 
     def print_clustered_predictions(self, predictions, phrases):
-        clustered_predictions, clustered_predictions_weights = self.get_clustered_predictions_and_counts(predictions,
-                                                                                                         phrases)
+        clustered_predictions, clustered_predictions_weights = self.get_phrases_in_good_clusters(predictions, phrases)
+
         important_clusters = []
         for key in clustered_predictions_weights.keys():
             important_clusters.append((clustered_predictions_weights[key], clustered_predictions[key]))

@@ -6,7 +6,7 @@ __author__ = 'georgi.val.stoyan0v@gmail.com'
 
 class BaseEmbeddingsMixin(object):
 
-    def __init__(self, directory, file_name):
+    def __init__(self, directory=None, file_name=None):
         self._emb_directory = directory
         self._emb_file_name = file_name
         self._emb_model = None
