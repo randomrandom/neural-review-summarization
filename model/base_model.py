@@ -40,7 +40,7 @@ class BaseModel(BaseEmbeddingsMixin):
         raise NotImplementedError
 
     @abstractclassmethod
-    def good_clusters(self):
+    def get_good_clusters(self):
         raise NotImplementedError
 
     def cluster_labels(self):
@@ -132,6 +132,19 @@ class BaseModel(BaseEmbeddingsMixin):
         return phrases_count
 
     def get_phrases_in_good_clusters(self, predictions, phrases):
+        filtered_phrases = []
+
+        for i in range(len(predictions)):
+            prediction = predictions[i]
+
+            if prediction in self.get_good_clusters():
+                filtered_phrases.append(phrases[i])
+
+        phrases_counts = Counter(filtered_phrases)
+
+        return phrases_counts
+
+    def get_clustered_phrases_in_good_clusters(self, predictions, phrases):
         clustered_predictions = {}
         clustered_predictions_weights = {}
 
@@ -140,7 +153,7 @@ class BaseModel(BaseEmbeddingsMixin):
         for i in range(len(predictions)):
             test_prediction = predictions[i]
 
-            if test_prediction in self.good_clusters():
+            if test_prediction in self.get_good_clusters():
                 if test_prediction not in clustered_predictions:
                     clustered_predictions[test_prediction] = set()
                     clustered_predictions_weights[test_prediction] = 0
@@ -151,7 +164,7 @@ class BaseModel(BaseEmbeddingsMixin):
         return clustered_predictions, clustered_predictions_weights
 
     def print_clustered_predictions(self, predictions, phrases):
-        clustered_predictions, clustered_predictions_weights = self.get_phrases_in_good_clusters(predictions, phrases)
+        clustered_predictions, clustered_predictions_weights = self.get_clustered_phrases_in_good_clusters(predictions, phrases)
 
         important_clusters = []
         for key in clustered_predictions_weights.keys():

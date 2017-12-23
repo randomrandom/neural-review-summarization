@@ -111,4 +111,5 @@ data/*.tsv
 *.tsv
 *.csv
 *.pkl
+*.xlsx
 __pycache__
