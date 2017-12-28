@@ -9,14 +9,14 @@ __author__ = 'georgi.val.stoyan0v@gmail.com'
 
 
 class BaseModel(BaseEmbeddingsMixin):
-    def __init__(self):
+    def __init__(self, embedding_model=None):
         super().__init__()
 
         self.n_gram_meanings = None
         self.n_gram_meaning_labels = None
         self.n_gram_meaning_matrix = None
 
-        self._model = self._init_model()
+        self._model = self._init_model(embedding_model=embedding_model)
 
     @abstractclassmethod
     def train_model(self, n_grams, model_name):
@@ -36,7 +36,7 @@ class BaseModel(BaseEmbeddingsMixin):
 
     @staticmethod
     @abstractclassmethod
-    def _init_model(self):
+    def _init_model(self, embedding_model=None):
         raise NotImplementedError
 
     @abstractclassmethod

@@ -13,6 +13,10 @@ __author__ = 'georgi.val.stoyan0v@gmail.com'
 
 
 class AffinityClusterModel(BaseModel, GloveMixin):
+    UNIGRAM_MODEL = 'unigrams'
+    BIGRAM_MODEL = 'bigrams'
+    TRIGRAM_MODEL = 'trigrams'
+
     _PHRASE_KEY = 'Phrase'
     _CLUSTER_LABEL_KEY = 'Cluster Label'
     _LIST_ID_KEY = 'List Id'
@@ -28,8 +32,8 @@ class AffinityClusterModel(BaseModel, GloveMixin):
     _AFFINITY_MODEL_PKL = '_affinity_model.pkl'
     _NEAREST_N_MODEL_PKL = '_nearest_n_model.pkl'
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, embedding_model=None):
+        super().__init__(embedding_model=embedding_model)
 
         self.phrase_cluster_labels = None
         self.cluster_centers = None
@@ -40,8 +44,11 @@ class AffinityClusterModel(BaseModel, GloveMixin):
 
         self._nearest_n_model = NearestNeighbors(metric='cosine')
 
-    def _init_model(self):
-        self.load_embeddings_model()
+    def _init_model(self, embedding_model=None):
+        if embedding_model is None:
+            self.load_embeddings_model()
+        else:
+            self.emb_model = embedding_model
 
         return cluster.AffinityPropagation(damping=0.9, max_iter=2000, convergence_iter=1000, preference=None,
                                            affinity='precomputed', verbose=True)
@@ -128,6 +135,8 @@ class AffinityClusterModel(BaseModel, GloveMixin):
 
     def load_model(self, model_name, load_dir=_DIRECTORY, cluster_labels_file=_AFFINITY_CLUSTER_LABELS,
                    cluster_centers_file=_AFFINITY_CLUSTER_CENTERS):
+        print('Loading \'{}\' model'.format(model_name))
+
         phrase_cluster_labels_df = pd.read_csv(load_dir + model_name + '_' + cluster_labels_file)
         cluster_centers_df = pd.read_csv(load_dir + model_name + '_' + cluster_centers_file)
 

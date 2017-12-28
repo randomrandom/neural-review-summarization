@@ -104,6 +104,7 @@ ENV/
 .idea/
 data/__pycache__/
 data/datasets/__pycache__/
+data/*.txt
 model/embeddings/glove*
 data/*.tsv
 #*.ipynb_checkpoints

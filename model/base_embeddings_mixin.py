@@ -9,14 +9,14 @@ class BaseEmbeddingsMixin(object):
     def __init__(self, directory=None, file_name=None):
         self._emb_directory = directory
         self._emb_file_name = file_name
-        self._emb_model = None
+        self.emb_model = None
         self._emb_model_name = None
         self._emb_size = 0
 
     def vectorize_word(self, word):
-        assert self._emb_model, "Embeddings model should be loaded first!"
+        assert self.emb_model, "Embeddings model should be loaded first!"
 
-        return self._emb_model[word]
+        return self.emb_model[word]
 
     def load_embeddings_model(self):
         print("Loading {} model..".format(self._emb_model_name))
@@ -32,7 +32,7 @@ class BaseEmbeddingsMixin(object):
 
             self._emb_size = len(split_line) - 1
 
-        self._emb_model = model
+        self.emb_model = model
         print("Done.", len(model), " words loaded!")
 
     def vectorize_phrases(self, phrases):
@@ -54,7 +54,7 @@ class BaseEmbeddingsMixin(object):
         all_in_glove = True
 
         for key in keys:
-            if key not in self._emb_model:
+            if key not in self.emb_model:
                 all_in_glove = False
                 break
 
@@ -62,7 +62,7 @@ class BaseEmbeddingsMixin(object):
             emb_sum = np.zeros(self._emb_size)
 
             for key in keys:
-                vec = self._emb_model[key]
+                vec = self.emb_model[key]
                 emb_sum += vec
 
             emb_sum /= len(keys)
