@@ -17,6 +17,7 @@ class SummaryRecommender:
         "i",
         "thing",
         "entire",
+        "whole",
         "several",
         "previous",
         "other",
@@ -25,6 +26,7 @@ class SummaryRecommender:
         "few movies",
         "new film",
         "much time",
+        "pretty much"
     }
 
     def __init__(self, data_file, encoding='latin-1'):
@@ -90,9 +92,9 @@ class SummaryRecommender:
                                                                                trigram_original_phrases)
 
         all_good_phrases = []
-        all_good_phrases.extend(self.__pack_and_prune_n_grams(unigram_phrases_usage, 1))
-        all_good_phrases.extend(self.__pack_and_prune_n_grams(bigram_phrases_usage, 2))
-        all_good_phrases.extend(self.__pack_and_prune_n_grams(trigram_phrases_usage, 3))
+        all_good_phrases.extend(self.__pack_and_prune_n_grams(unigram_phrases_usage, 1, prune_threshold=80))
+        all_good_phrases.extend(self.__pack_and_prune_n_grams(bigram_phrases_usage, 2, prune_threshold=150))
+        all_good_phrases.extend(self.__pack_and_prune_n_grams(trigram_phrases_usage, 3, prune_threshold=150))
 
         return all_good_phrases
 
