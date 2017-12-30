@@ -1,4 +1,4 @@
-from scipy import spatial
+from scipy import spatial, math
 
 from model.affinity_cluster_model import AffinityClusterModel
 from processors.imdb_processor import IMDBProcessor
@@ -9,6 +9,7 @@ __author__ = 'georgi.val.stoyan0v@gmail.com'
 class SummaryRecommender:
     _PHRASE_KEY = 'phrase'
     _COUNT_KEY = 'count'
+    _SCORE_KEY = 'score'
     _N_GRAM_SIZE = 'n_size'
 
     _SIMILARITY_THRESHOLD = 0.80
@@ -58,7 +59,8 @@ class SummaryRecommender:
         self._trigrams_cl.load_model(AffinityClusterModel.TRIGRAM_MODEL)
         print('Loading of n-gram models completed.')
 
-    def __pack_and_prune_n_grams(self, n_gram_usage_dict, n_gram_count, prune_threshold=100):
+    def __pack_and_prune_n_grams(self, model, original_to_closest_phrases, n_gram_usage_dict, n_gram_count,
+                                 prune_threshold=100):
         packed_n_grams = []
 
         n_gram_usage = [(k, v) for k, v in n_gram_usage_dict.items()]
@@ -66,9 +68,12 @@ class SummaryRecommender:
         pruned_n_gram_usage = n_gram_usage[:prune_threshold]
 
         for key, count in pruned_n_gram_usage:
+            closest_phrase = original_to_closest_phrases[key]
+
             packed_n_grams.append({
                 self._PHRASE_KEY: key,
                 self._COUNT_KEY: count,
+                self._SCORE_KEY: model.phrases_to_scores[closest_phrase],
                 self._N_GRAM_SIZE: n_gram_count,
             })
 
@@ -77,7 +82,7 @@ class SummaryRecommender:
     def _predict_good_phrases(self):
         unigram_predictions, unigram_original_phrases, unigram_closest_phrases = self._unigrams_cl.predict(
             self._processor.unigrams)
-
+        original_to_closest_phrases = dict(zip(unigram_original_phrases, unigram_closest_phrases))
         unigram_phrases_usage = self._unigrams_cl.get_phrases_in_good_clusters(unigram_predictions,
                                                                                unigram_original_phrases)
 
@@ -85,16 +90,21 @@ class SummaryRecommender:
             self._processor.bigrams)
         bigram_phrases_usage = self._bigrams_cl.get_phrases_in_good_clusters(bigram_predictions,
                                                                              bigram_original_phrases)
+        original_to_closest_phrases.update(zip(bigram_original_phrases, bigram_closest_phrases))
 
         trigram_predictions, trigram_original_phrases, trigram_closest_phrases = self._trigrams_cl.predict(
             self._processor.trigrams)
         trigram_phrases_usage = self._trigrams_cl.get_phrases_in_good_clusters(trigram_predictions,
                                                                                trigram_original_phrases)
+        original_to_closest_phrases.update(zip(trigram_original_phrases, trigram_closest_phrases))
 
         all_good_phrases = []
-        all_good_phrases.extend(self.__pack_and_prune_n_grams(unigram_phrases_usage, 1, prune_threshold=80))
-        all_good_phrases.extend(self.__pack_and_prune_n_grams(bigram_phrases_usage, 2, prune_threshold=150))
-        all_good_phrases.extend(self.__pack_and_prune_n_grams(trigram_phrases_usage, 3, prune_threshold=150))
+        all_good_phrases.extend(self.__pack_and_prune_n_grams(self._unigrams_cl, original_to_closest_phrases,
+                                                              unigram_phrases_usage, 1, prune_threshold=80))
+        all_good_phrases.extend(self.__pack_and_prune_n_grams(self._bigrams_cl, original_to_closest_phrases,
+                                                              bigram_phrases_usage, 2, prune_threshold=150))
+        all_good_phrases.extend(self.__pack_and_prune_n_grams(self._trigrams_cl, original_to_closest_phrases,
+                                                              trigram_phrases_usage, 3, prune_threshold=150))
 
         return all_good_phrases
 
@@ -144,22 +154,30 @@ class SummaryRecommender:
 
         return filtered_phrases
 
+    def _update_scores(self, phrases_to_update):
+        for phrase in phrases_to_update:
+            score = phrase[self._COUNT_KEY] * (1 + 0.4 * phrase[self._SCORE_KEY])
+            phrase[self._SCORE_KEY] = math.ceil(score * 100) / 100
+
+        return phrases_to_update
+
     def recommend_phrases(self, recommendation_size=10, unigrams_ratio=.2, bigrams_ratio=.4, trigrams_ratio=.4):
         good_phrases = self._predict_good_phrases()
         filtered_phrases = self._filter_phrases(good_phrases)
         compressed_phrases = self._compress_similar_phrases(filtered_phrases)
+        updated_phrases = self._update_scores(compressed_phrases)
 
         # TODO: add scoring of the phrases
 
         # separating phrases
-        unigram_phrases = list(filter(lambda x: x[self._N_GRAM_SIZE] == 1, compressed_phrases))
-        bigram_phrases = list(filter(lambda x: x[self._N_GRAM_SIZE] == 2, compressed_phrases))
-        trigram_phrases = list(filter(lambda x: x[self._N_GRAM_SIZE] == 3, compressed_phrases))
+        unigram_phrases = list(filter(lambda x: x[self._N_GRAM_SIZE] == 1, updated_phrases))
+        bigram_phrases = list(filter(lambda x: x[self._N_GRAM_SIZE] == 2, updated_phrases))
+        trigram_phrases = list(filter(lambda x: x[self._N_GRAM_SIZE] == 3, updated_phrases))
 
         # sorting lists
-        unigram_phrases.sort(key=lambda item: item[self._COUNT_KEY], reverse=True)
-        bigram_phrases.sort(key=lambda item: item[self._COUNT_KEY], reverse=True)
-        trigram_phrases.sort(key=lambda item: item[self._COUNT_KEY], reverse=True)
+        unigram_phrases.sort(key=lambda item: item[self._SCORE_KEY], reverse=True)
+        bigram_phrases.sort(key=lambda item: item[self._SCORE_KEY], reverse=True)
+        trigram_phrases.sort(key=lambda item: item[self._SCORE_KEY], reverse=True)
 
         trigrams_count = trigrams_ratio * recommendation_size
         bigrams_count = bigrams_ratio * recommendation_size
@@ -167,21 +185,15 @@ class SummaryRecommender:
 
         # fill the wanted ratios from trigrams, bigrams to unigrams
         for phrase in trigram_phrases:
-            if phrase[self._COUNT_KEY] < 2 or len(recommended_phrases) >= trigrams_count:
-                break
-
-            recommended_phrases.append(phrase)
+            if phrase[self._COUNT_KEY] >= 2 and len(recommended_phrases) < trigrams_count:
+                recommended_phrases.append(phrase)
 
         for phrase in bigram_phrases:
-            if phrase[self._COUNT_KEY] < 2 or len(recommended_phrases) >= (trigrams_count + bigrams_count):
-                break
-
-            recommended_phrases.append(phrase)
+            if phrase[self._COUNT_KEY] >= 2 and len(recommended_phrases) < (trigrams_count + bigrams_count):
+                recommended_phrases.append(phrase)
 
         for phrase in unigram_phrases:
-            if phrase[self._COUNT_KEY] < 2 or len(recommended_phrases) >= recommendation_size:
-                break
-
-            recommended_phrases.append(phrase)
+            if phrase[self._COUNT_KEY] >= 2 and len(recommended_phrases) < recommendation_size:
+                recommended_phrases.append(phrase)
 
         return recommended_phrases

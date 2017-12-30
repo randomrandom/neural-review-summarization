@@ -17,12 +17,16 @@ class AffinityClusterModel(BaseModel, GloveMixin):
     BIGRAM_MODEL = 'bigrams'
     TRIGRAM_MODEL = 'trigrams'
 
+    OUT_OF_CLUSTER_ID = -1
+
+    _NEAREST_N_SIMILARITY_THRESHOLD = 0.50
+
     _PHRASE_KEY = 'Phrase'
     _CLUSTER_LABEL_KEY = 'Cluster Label'
+    _SCORE_KEY = 'Score'
     _LIST_ID_KEY = 'List Id'
     _NA_KEY = 'NA'
     _GOOD_WORDS_KEY = 'Good Words'
-    _SCORE_KEY = 'Score'
     _GOOD_WORD_KEY = 'GW{}'
     _WORD_KEY = 'W{}'
     _GOOD_CLUSTER_THRESHOLD = 0.2
@@ -35,11 +39,12 @@ class AffinityClusterModel(BaseModel, GloveMixin):
     def __init__(self, embedding_model=None):
         super().__init__(embedding_model=embedding_model)
 
-        self.phrase_cluster_labels = None
-        self.cluster_centers = None
+        self._phrase_to_cluster_ids = None
+        self._cluster_centers = None
+        self.phrases_to_scores = None
 
-        self.all_cluster_centers = None
-        self.all_cluster_center_meanings = None
+        self._all_cluster_centers = None
+        self._all_cluster_center_meanings = None
         self._good_clusters = None
 
         self._nearest_n_model = NearestNeighbors(metric='cosine')
@@ -67,13 +72,23 @@ class AffinityClusterModel(BaseModel, GloveMixin):
 
     def predict(self, x):
         vectorized_phrases, original_phrases = self.vectorize_phrases(x)
-        cluster_center_predictions = self._nearest_n_model.kneighbors(vectorized_phrases, return_distance=False)[:, 0]
+        distances, cluster_center_predictions = self._nearest_n_model.kneighbors(vectorized_phrases,
+                                                                                 return_distance=True)
+        distances = distances[:, 0]
+        cluster_center_predictions = cluster_center_predictions[:, 0]
 
-        predictions = [self.phrase_cluster_labels[self.all_cluster_centers[cluster_center_prediction]]
+        predictions = [self._phrase_to_cluster_ids[self._all_cluster_centers[cluster_center_prediction]]
                        for cluster_center_prediction in cluster_center_predictions]
 
-        closest_phrases = [self.all_cluster_centers[cluster_center_prediction]
+        closest_phrases = [self._all_cluster_centers[cluster_center_prediction]
                            for cluster_center_prediction in cluster_center_predictions]
+
+        # mark phrases which have low cosine similarity to the cluster's centroid
+        # that they belong too (probably shouldn't be considered if they are not too in common)
+        for i in range(len(distances)):
+            cosine_similarity = 1 - distances[i]
+            if cosine_similarity < self._NEAREST_N_SIMILARITY_THRESHOLD:
+                predictions[i] = self.OUT_OF_CLUSTER_ID
 
         return predictions, original_phrases, closest_phrases
 
@@ -110,16 +125,18 @@ class AffinityClusterModel(BaseModel, GloveMixin):
                                         index=False)
         cluster_centers_df.to_csv(save_dir + model_name + '_' + cluster_centers_file, encoding='utf-8', index=False)
 
-        self.all_cluster_centers = list(cluster_centers_df[self._PHRASE_KEY])
-        self.all_cluster_center_meanings = [self.vectorize_phrase(cluster_center_phrase) for
-                                            cluster_center_phrase in tqdm(self.all_cluster_centers)]
+        self._all_cluster_centers = list(cluster_centers_df[self._PHRASE_KEY])
+        self._all_cluster_center_meanings = [self.vectorize_phrase(cluster_center_phrase) for
+                                             cluster_center_phrase in tqdm(self._all_cluster_centers)]
 
-        self.phrase_cluster_labels = BaseProcessor.df_to_dict(phrase_cluster_labels_df, value_column=self._CLUSTER_LABEL_KEY)
+        self._phrase_to_cluster_ids = BaseProcessor.df_to_dict(phrase_cluster_labels_df,
+                                                               value_column=self._CLUSTER_LABEL_KEY)
+        self.phrases_to_scores = self.__map_phrases_to_cluster_scores(cluster_centers_df, self._phrase_to_cluster_ids)
 
         self._save_scikit_model(self._model, save_dir, model_name + self._AFFINITY_MODEL_PKL)
-
         print('Model saved.')
-        return self.all_cluster_center_meanings
+
+        return self._all_cluster_center_meanings
 
     def __find_good_clusters(self, cluster_centers_df):
         good_clusters = {}
@@ -133,25 +150,39 @@ class AffinityClusterModel(BaseModel, GloveMixin):
 
         return good_clusters
 
+    def __map_phrases_to_cluster_scores(self, cluster_centers_df, phrase_to_cluster_ids):
+        ids_to_scores = BaseProcessor.df_to_dict(cluster_centers_df, key_column=self._CLUSTER_LABEL_KEY,
+                                               value_column=self._SCORE_KEY)
+
+        phrases_to_scores = {}
+
+        for phrase in self._phrase_to_cluster_ids:
+            cluster_id = self._phrase_to_cluster_ids[phrase]
+            cluster_score = ids_to_scores[cluster_id]
+
+            phrases_to_scores[phrase] = cluster_score
+
+        return phrases_to_scores
+
     def load_model(self, model_name, load_dir=_DIRECTORY, cluster_labels_file=_AFFINITY_CLUSTER_LABELS,
                    cluster_centers_file=_AFFINITY_CLUSTER_CENTERS):
         print('Loading \'{}\' model'.format(model_name))
-
-        phrase_cluster_labels_df = pd.read_csv(load_dir + model_name + '_' + cluster_labels_file)
+        phrase_to_cluster_ids_df = pd.read_csv(load_dir + model_name + '_' + cluster_labels_file)
         cluster_centers_df = pd.read_csv(load_dir + model_name + '_' + cluster_centers_file)
 
         self._good_clusters = self.__find_good_clusters(cluster_centers_df)
-        self.all_cluster_centers = list(cluster_centers_df[self._PHRASE_KEY])
-        self.all_cluster_center_meanings = [self.vectorize_phrase(cluster_center_phrase) for
-                                            cluster_center_phrase in tqdm(self.all_cluster_centers)]
+        self._all_cluster_centers = list(cluster_centers_df[self._PHRASE_KEY])
+        self._all_cluster_center_meanings = [self.vectorize_phrase(cluster_center_phrase) for
+                                             cluster_center_phrase in tqdm(self._all_cluster_centers)]
 
-        self.phrase_cluster_labels = BaseProcessor.df_to_dict(phrase_cluster_labels_df, value_column=self._CLUSTER_LABEL_KEY)
+        self._phrase_to_cluster_ids = BaseProcessor.df_to_dict(phrase_to_cluster_ids_df,
+                                                               value_column=self._CLUSTER_LABEL_KEY)
 
+        self.phrases_to_scores = self.__map_phrases_to_cluster_scores(cluster_centers_df, self._phrase_to_cluster_ids)
         self._model = self._load_scikit_model(load_dir, model_name + self._AFFINITY_MODEL_PKL)
 
         self._nearest_n_model = NearestNeighbors(metric='cosine')
-        self._nearest_n_model.fit(pd.np.array(self.all_cluster_center_meanings))
-
+        self._nearest_n_model.fit(pd.np.array(self._all_cluster_center_meanings))
         print('Model loaded.')
 
     def get_good_clusters(self):
