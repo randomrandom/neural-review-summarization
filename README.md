@@ -58,9 +58,9 @@ To Be Added
 ## Installation
 To Be Added
 
-## jupyter notebooks
-to use jupyter notebooks in the created virtual environment, follow these instructions: [https://help.pythonanywhere.com/pages/IPythonNotebookVirtualenvs/](instructions)
-
+## Jupyter Notebooks
+to use jupyter notebooks in the created virtual environment, follow
+these instructions: [https://help.pythonanywhere.com/pages/IPythonNotebookVirtualenvs/](instructions)
 
 ## Training the model
 
@@ -71,7 +71,7 @@ they are preprocessed and clustered. The cluster centers and labels of
 each phrase are the output of the model - they are saved in a csv file
 for later labeling and usage.
 
-For more infromation about the labeling strategy check `model/saved`
+For more information about the labeling strategy check `model/saved`
 directory
 
 <p align="center">
@@ -81,7 +81,7 @@ directory
 ## Predicting
 
 Predictions go through several steps:
-1. Preprocessing - makes sure that movies' reviews are broken down into
+1. Pre-processing - makes sure that movies' reviews are broken down into
 n-grams and all clutter is removed.
 1. Affinity Model Predictions - predicts the cluster ids of all the
 remaining n-grams. N-grams that do not fall into the good clusters group
@@ -93,15 +93,15 @@ and recommend the best summaries
   <img src="https://raw.githubusercontent.com/randomrandom/neural-review-summarization/master/png/model-predictions.png" width="1024"/>
 </p>
 
-### Preprocessing
+### Pre-processing
 
 The `IMDBPreprocessor` has the following public APIs:
 1. `load_data` - loads a csv / tsv file with reviews related to a movie
 1. `prepare_data` - splits all the data into n-grams, POS tagging and
 POS template filtering
 
-Addition `unigrams`, `bigrams` and `trigrams` are also public and ready
-to use after `prepare_data` has been called.
+Additionally `unigrams`, `bigrams` and `trigrams` are also public and
+ready to use after `prepare_data` has been called.
 
 ### Affinity Model Predictions
 
