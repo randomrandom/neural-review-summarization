@@ -1,6 +1,6 @@
 # Neural-Review-Summarization: Summarization of the essence of user movie reviews
 
-### Overview
+## Overview
 
 A neural model that extracts the essence out of movie reviews. The model
 first looks through a large number of movie reviews, forms different
@@ -20,7 +20,7 @@ This model is inspired by the GooglePlay model for review summarization:
   <img src="https://raw.githubusercontent.com/randomrandom/neural-review-summarization/master/png/google-play.png" width="1024"/>
 </p>
 
-#### Example
+### Example
 
 Input: [80 Midnight Cowboy User Reviews](http://www.imdb.com/title/tt0064665/reviews?ref_=tt_ov_rt)
 
@@ -48,7 +48,21 @@ Output:
  {'count': 23, 'n_size': 1, 'phrase': 'bad', 'score': 24.85}]
 ```
 
-### Training the model
+## Version
+
+Current version : __***0.0.0.1***__
+
+## Dependencies ( VERSION MUST BE MATCHED EXACTLY! )
+To Be Added
+
+## Installation
+To Be Added
+
+## jupyter notebooks
+to use jupyter notebooks in the created virtual environment, follow these instructions: [https://help.pythonanywhere.com/pages/IPythonNotebookVirtualenvs/](instructions)
+
+
+## Training the model
 
 The model is trained in mostly unsupervised manor with a small dataset
 that needs to be labeled by hand (600-1000 entries). During training
@@ -64,7 +78,7 @@ directory
   <img src="https://raw.githubusercontent.com/randomrandom/neural-review-summarization/master/png/model-training.png" width="1024"/>
 </p>
 
-### Predicting
+## Predicting
 
 Predictions go through several steps:
 1. Preprocessing - makes sure that movies' reviews are broken down into
@@ -79,7 +93,7 @@ and recommend the best summaries
   <img src="https://raw.githubusercontent.com/randomrandom/neural-review-summarization/master/png/model-predictions.png" width="1024"/>
 </p>
 
-#### Preprocessing
+### Preprocessing
 
 The `IMDBPreprocessor` has the following public APIs:
 1. `load_data` - loads a csv / tsv file with reviews related to a movie
@@ -89,7 +103,7 @@ POS template filtering
 Addition `unigrams`, `bigrams` and `trigrams` are also public and ready
 to use after `prepare_data` has been called.
 
-#### Affinity Model Predictions
+### Affinity Model Predictions
 
 The `AffinityClusterModel` has the following important public APIs:
 1. `save_model` and `load_model`
@@ -102,7 +116,7 @@ not fall into the manually labeled good clusters
   <img src="https://raw.githubusercontent.com/randomrandom/neural-review-summarization/master/png/affinity-model.png" width="1024"/>
 </p>
 
-#### Summary Recommendations
+### Summary Recommendations
 
 The `SummaryRecommender` model has the following important APIs:
 1. `generate_phrases` - loads reviews about a movie from a file,
@@ -115,5 +129,8 @@ Compression and Summary Recommendations on top
   <img src="https://raw.githubusercontent.com/randomrandom/neural-review-summarization/master/png/recommender-model.png" width="1024"/>
 </p>
 
-### jupyter notebooks
-to use jupyter notebooks in the created virtual environment, follow these instructions: [https://help.pythonanywhere.com/pages/IPythonNotebookVirtualenvs/](instructions)
+## Future works
+To Be Added
+
+## Authors
+George Stoyanov (georgi.val.stoyan0v@gmail.com)
