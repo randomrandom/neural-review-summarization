@@ -54,7 +54,9 @@ for later labeling and usage.
 For more infromation about the labeling strategy check `model/saved`
 directory
 
-// train model picture
+<p align="center">
+  <img src="https://raw.githubusercontent.com/randomrandom/neural-review-summarization/master/png/model-training.png" width="1024"/>
+</p>
 
 ### Predicting
 
@@ -67,7 +69,9 @@ are filtered out.
 1. Summary Recommendations - applies additional steps to filter, compress
 and recommend the best summaries
 
-// model prediction picture
+<p align="center">
+  <img src="https://raw.githubusercontent.com/randomrandom/neural-review-summarization/master/png/model-predictions.png" width="1024"/>
+</p>
 
 #### Preprocessing
 
@@ -79,8 +83,6 @@ POS template filtering
 Addition `unigrams`, `bigrams` and `trigrams` are also public and ready
 to use after `prepare_data` has been called.
 
-// model preprocessing picture
-
 #### Affinity Model Predictions
 
 The `AffinityClusterModel` has the following important public APIs:
@@ -90,7 +92,9 @@ to predict the most appropriate cluster label
 1. `get_phrases_in_good_clusters` - filters any predictions that do
 not fall into the manually labeled good clusters
 
-// affinity model picture
+<p align="center">
+  <img src="https://raw.githubusercontent.com/randomrandom/neural-review-summarization/master/png/affinity-model.png" width="1024"/>
+</p>
 
 #### Summary Recommendations
 
@@ -101,7 +105,9 @@ internally calls the `IMDBPreprocessor` APIs
 calls `AffinityClusterModel` and then applies Blacklist Filtering,
 Compression and Summary Recommendations on top
 
-// summary recommendation picture
+<p align="center">
+  <img src="https://raw.githubusercontent.com/randomrandom/neural-review-summarization/master/png/recommender-model.png" width="1024"/>
+</p>
 
 ### jupyter notebooks
 to use jupyter notebooks in the created virtual environment, follow these instructions: [https://help.pythonanywhere.com/pages/IPythonNotebookVirtualenvs/](instructions)
