@@ -14,6 +14,12 @@ with K-Nearest-Neighbours algorithm to predict which of the new phrases
 are meaningful. Additional filtering, compression and recommendations
 are applied before presenting the final result.
 
+This model is inspired by the GooglePlay model for review summarization:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/randomrandom/neural-review-summarization/master/png/google-play.png" width="1024"/>
+</p>
+
 #### Example
 
 Input: [80 Midnight Cowboy User Reviews](http://www.imdb.com/title/tt0064665/reviews?ref_=tt_ov_rt)
