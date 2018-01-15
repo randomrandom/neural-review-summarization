@@ -74,9 +74,7 @@ for later labeling and usage.
 For more information about the labeling strategy check `model/saved`
 directory
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/randomrandom/neural-review-summarization/master/png/model-training.png" width="1024"/>
-</p>
+![picture](png/model-training.png)
 
 ## Predicting
 
