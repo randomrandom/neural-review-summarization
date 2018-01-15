@@ -1,0 +1,580 @@
+List Id,Phrase,Cluster Label,W0,W1,W2,W3,W4,Good Words,Score,GW0,GW1,GW2,GW3,GW4
+15,only actor,0,fine actor,veteran actor,single actor,real actor,other actor,0,0,1,1,1,1,1
+22,same cast,1,huge cast,same cast,cast members,other cast,regular cast,0,0,1,1,1,1,1
+25,huge success,2,huge mistake,huge difference,huge disappointment,commercial success,huge hit,0,0,1,1,1,1,1
+27,sam peckinpah,3,sam waterston,NA,NA,sam peckinpah,NA,0,0,1,0,0,1,0
+29,several times,4,difficult times,hard times,various times,few times,several times,0,0,1,1,1,1,1
+45,utterly devoid,5,utterly devoid,NA,utterly pointless,NA,NA,0,0,1,0,1,0,0
+49,second season,6,fourth season,seventh season,next season,first season,last season,0,0,1,1,1,1,1
+57,few lines,7,quotable lines,bad lines,few lines,great lines,many lines,0,0,1,1,1,1,1
+67,presidential candidate,8,NA,manchurian candidate,presidential palace,presidential candidate,NA,0,0,0,1,1,1,0
+69,top performance,9,top form,top performance,top quality,top notch,top ten,0,0,1,1,1,1,1
+73,good director,10,great director,executive producer,favorite director,excellent director,talented director,0,0,1,1,1,1,1
+76,extra feature,11,commentary track,extra features,special feature,double feature,added bonus,0,0,1,1,1,1,1
+97,same actors,12,asian actors,few actors,same actors,many actors,live actors,0,0,1,1,1,1,1
+105,tim roth,13,jon voight,tim roth,tiny tim,gregory peck,tim burton,0,0,1,1,1,1,1
+111,dont think,14,bad dont,dont let,dont rent,dont try,dont worry,-1,-0.2,1,1,1,1,1
+124,blatant ripoff,15,NA,NA,NA,blatant ripoff,NA,1,1,0,0,0,1,0
+136,good script,16,good writing,great script,intelligent script,original script,solid script,0,0,1,1,1,1,1
+139,animated movie,17,animated batman,animated series,animated movie,animated movies,pokemon movie,0,0,1,1,1,1,1
+141,french movie,18,french director,french movie,french actors,french production,french girl,0,0,1,1,1,1,1
+172,ulli lommel,19,ulli lommel,NA,NA,NA,NA,0,0,1,0,0,0,0
+174,first one,20,first couple,first hand,first date,first moment,first effort,-1,-0.2,1,1,1,1,1
+181,few minutes,21,twenty minutes,many minutes,half dozen,few minutes,last minute,0,0,1,1,1,1,1
+185,other reviewers,22,many reviewers,other commentators,other review,other reviewer,previous reviewers,0,0,1,1,1,1,1
+186,pretty cool,23,cool kids,cool dude,pretty tame,ll cool,cool j,0,0,1,1,1,1,1
+188,awful i,24,scary i,rubbish i,horrible i,dumb i,awful truth,-1,-0.2,1,1,1,1,1
+192,ray milland,25,invisible ray,ray milland,NA,NA,olen ray,0,0,1,1,0,0,1
+203,welcome change,26,welcome addition,NA,refreshing change,welcome change,NA,0,0,1,0,1,1,0
+223,norman maclean,27,NA,norman jewison,NA,NA,norman maclean,0,0,0,1,0,0,1
+236,old girl,28,old friend,old fashion,old guy,old niece,old woman,0,0,1,1,1,1,1
+248,lame excuse,29,lame excuse,pretty lame,NA,pathetic excuse,lame attempt,3,0.75,1,1,0,1,1
+253,dorothy stratten,30,dorothy malone,ava gardner,lillian hellman,dorothy lamour,dorothy stratten,0,0,1,1,1,1,1
+272,fay grim,31,fay grim,NA,fay wray,grim reaper,NA,0,0,1,0,1,1,0
+284,amy adams,32,angie dickinson,amy poehler,bryan adams,amy adams,naomi watts,0,0,1,1,1,1,1
+285,old time,33,old series,old ones,old testament,old fast,old book,0,0,1,1,1,1,1
+289,complete crap,34,complete mess,pure crap,complete idiots,complete joke,utter crap,0,0,1,1,1,1,1
+291,much nothing,35,much darker,much tension,isnt anything,much happens,much thought,0,0,1,1,1,1,1
+293,mr beetle,36,NA,dr strangelove,mr blandings,NA,mr beetle,0,0,0,1,1,0,1
+295,single thing,37,single aspect,single character,single laugh,single word,single day,0,0,1,1,1,1,1
+296,same room,38,much room,same room,little room,sealed room,dark room,0,0,1,1,1,1,1
+299,mickey rourke,39,gabby hayes,mickey rooney,mickey mouse,mickey rourke,NA,0,0,1,1,1,1,0
+329,albert finney,40,NA,albert pyun,albert brooks,albert einstein,albert finney,0,0,0,1,1,1,1
+340,second viewing,41,first viewing,second viewing,essential viewing,third viewing,NA,0,0,1,1,1,1,0
+345,same film,42,latter film,superior film,unique film,historical film,new film,5,1,1,1,1,1,1
+348,cant think,43,cant recommend,cant figure,cant talk,cant remember,cant understand,0,0,1,1,1,1,1
+349,ingrid pitt,44,angelina jolie,brad pitt,ingrid pitt,ingrid bergman,NA,0,0,1,1,1,1,0
+363,american way,45,american town,american soldier,american bulldog,american accents,american history,-1,-0.2,1,1,1,1,1
+369,guilty pleasures,46,NA,guilty pleasure,NA,NA,guilty pleasures,0,0,0,1,0,0,1
+370,new friend,47,new wife,new boyfriend,new friend,new partner,new girlfriend,0,0,1,1,1,1,1
+374,entire time,48,entire experience,entire life,entire population,entire audience,entire running,0,0,1,1,1,1,1
+397,south park,49,jurassic park,central park,south park,NA,south street,0,0,1,1,1,0,1
+400,common sense,50,common theme,common denominator,common ground,common sense,traditional sense,0,0,1,1,1,1,1
+404,fatal mistake,51,fatal attraction,fatal mistake,freak accident,fatal flaw,fatal fury,0,0,1,1,1,1,1
+410,otto preminger,52,NA,NA,otto preminger,von triers,fritz langs,0,0,0,0,1,1,1
+420,nude scene,53,topless scene,nude scenes,NA,nude scene,NA,0,0,1,1,0,1,0
+430,susan sarandon,54,susan sarandon,susan hayward,whoopi goldberg,kate beckinsale,chris sarandon,-1,-0.2,1,1,1,1,1
+436,prime example,55,prime minister,NA,prime example,prime time,NA,0,0,1,0,1,1,0
+448,swedish movie,56,swedish movies,swedish film,swedish actors,danish movie,swedish movie,0,0,1,1,1,1,1
+450,laputa castle,57,NA,brokedown palace,NA,NA,laputa castle,0,0,0,1,0,0,1
+452,black hair,58,white hair,black hair,long hair,red hair,black leather,0,0,1,1,1,1,1
+454,sole reason,59,non existent,sole exception,sole purpose,sole reason,sole survivor,0,0,1,1,1,1,1
+473,great movie,60,great song,great muppet,great movies,remarkable movie,great villain,5,1,1,1,1,1,1
+478,same time,61,previous work,same period,same place,difficult time,mean time,0,0,1,1,1,1,1
+508,desperate attempt,62,failed attempt,desperate housewives,feeble attempts,serious attempt,weak attempt,0,0,1,1,1,1,1
+509,british soldiers,63,universal soldiers,british soldiers,american soldiers,fellow soldiers,armed forces,0,0,1,1,1,1,1
+514,real reason,64,real sense,real fans,real message,real purpose,real problem,0,0,1,1,1,1,1
+528,close friend,65,close attention,close friends,close ups,close encounters,only friend,0,0,1,1,1,1,1
+533,renny harlin,66,NA,renny harlin,NA,NA,NA,0,0,0,1,0,0,0
+553,new york,67,new yorks,new orleans,new batman,new york,new comer,-1,-0.2,1,1,1,1,1
+561,clear cut,68,rough cut,clear cut,NA,clean cut,quick cuts,0,0,1,1,0,1,1
+579,fifteen years,69,twenty years,forty years,ten years,fifty years,twelve year,0,0,1,1,1,1,1
+581,hard rock,70,red rock,rolling stones,chris rock,n roll,hard rock,0,0,1,1,1,1,1
+595,young lady,71,lady death,young lady,lady penelope,fair lady,first lady,0,0,1,1,1,1,1
+597,own opinion,72,own opinion,humble opinion,personal opinion,own conclusions,liberal use,0,0,1,1,1,1,1
+621,social issues,73,social worker,social commentary,social problems,social realism,personal issues,0,0,1,1,1,1,1
+634,female character,74,male characters,female roles,female character,female role,female characters,0,0,1,1,1,1,1
+638,scooby doo,75,scooby doo,scrappy doo,NA,goodnight mister,blah blah,0,0,1,1,0,1,1
+647,few days,76,few shows,few seasons,several days,few hours,few friends,0,0,1,1,1,1,1
+667,dead wife,77,dead girl,dead mother,dead husband,late wife,dead father,0,0,1,1,1,1,1
+675,few scenes,78,long scenes,individual scenes,violent scenes,such scenes,fight scenes,0,0,1,1,1,1,1
+692,hilarious moments,79,poignant moments,hilarious moments,hilarious performance,comedic moments,funny moments,0,0,1,1,1,1,1
+702,brian donlevy,80,brian donlevy,brian dennehy,brian yuzna,brian depalma,brian krause,0,0,1,1,1,1,1
+705,first war,81,alien invasion,korean war,great war,ww ii,first war,0,0,1,1,1,1,1
+710,beautiful cinematography,82,bad cinematography,great cinematography,beautiful animation,stunning cinematography,good cinematography,0,0,1,1,1,1,1
+715,successful career,83,successful career,illustrious career,good career,entire career,long career,0,0,1,1,1,1,1
+737,anna christie,84,NA,anna christie,anita strindberg,anna faris,elvira mistress,0,0,0,1,1,1,1
+749,other films,85,new films,many films,later films,mainstream films,dead films,0,0,1,1,1,1,1
+761,miss anything,86,miss price,miss sunshine,NA,miss anything,miss piggy,0,0,1,1,0,1,1
+771,other one,87,other species,other peoples,other person,other examples,other night,0,0,1,1,1,1,1
+773,black man,88,black girl,mole men,black man,black mask,black stallion,0,0,1,1,1,1,1
+784,classic movie,89,classic characters,classic story,classic films,classic cinema,classic horror,0,0,1,1,1,1,1
+786,ozzy osbourne,90,NA,NA,ozzy osbourne,NA,NA,0,0,0,0,1,0,0
+804,downs syndrome,91,NA,downs syndrome,NA,NA,down syndrome,0,0,0,1,0,0,1
+810,young wife,92,young lover,young friends,young son,unfaithful wife,married couple,0,0,1,1,1,1,1
+811,future projects,93,distant future,ambitious project,near future,future generations,future projects,0,0,1,1,1,1,1
+833,nostril picker,94,NA,nostril picker,NA,NA,NA,0,0,0,1,0,0,0
+843,young girl,95,young girl,young frankenstein,young bride,autistic girl,young kid,0,0,1,1,1,1,1
+845,other movies,96,many movies,other disney,different movies,such classics,such movie,2,0.4,1,1,1,1,1
+850,young actors,97,young actresses,young actors,black actors,young stars,young filmmakers,0,0,1,1,1,1,1
+855,good thing,98,clean fun,decent thing,good reason,good bits,hard thing,0,0,1,1,1,1,1
+871,big waste,99,absolute waste,total waste,real waste,terrible waste,complete waste,0,0,1,1,1,1,1
+881,only reason,100,only reason,unknown reason,second reason,only thing,only gripe,-1,-0.2,1,1,1,1,1
+885,al pacino,101,osama bin,al pacino,NA,weird al,NA,0,0,1,1,0,1,0
+890,exotic cars,102,tow truck,exotic locations,exotic cars,NA,expensive cars,0,0,1,1,1,0,1
+934,richard dean,103,richard widmark,dean cain,richard dean,richard harris,dean jagger,0,0,1,1,1,1,1
+949,late 1970s,104,late 1990s,late 80s,late 1980s,late teens,late 70s,0,0,1,1,1,1,1
+978,different way,105,different worlds,different time,unique way,different circumstances,different kind,0,0,1,1,1,1,1
+1016,whole thing,106,whole idea,whole group,whole enterprise,whole way,whole mess,0,0,1,1,1,1,1
+1033,nick cage,107,matt damon,nick cage,nicolas cage,nick charles,nicholas cage,0,0,1,1,1,1,1
+1040,previous comment,108,previous tenant,final comment,previous comment,other comment,previous commentator,0,0,1,1,1,1,1
+1052,napoleon dynamite,109,NA,NA,NA,NA,napoleon dynamite,0,0,0,0,0,0,1
+1056,good amount,110,good amount,equal measure,fair amount,right amount,amazing amount,0,0,1,1,1,1,1
+1067,favorite movie,111,favorite scene,favorite episodes,favorite part,favorite movies,favourite films,0,0,1,1,1,1,1
+1070,robert taylor,112,robert mitchum,daniel craig,robert wagner,bob thornton,robert downey,0,0,1,1,1,1,1
+1085,cameo role,113,starring role,memorable role,brief role,cameo role,thankless role,0,0,1,1,1,1,1
+1104,amanda root,114,NA,amanda peet,NA,NA,amanda root,0,0,0,1,0,0,1
+1129,wrong way,115,carlitos way,wrong choice,wrong thing,wrong time,wrong reasons,0,0,1,1,1,1,1
+1143,linda hamilton,116,NA,laird hamilton,eddy chandler,linda hamilton,NA,0,0,0,1,1,1,0
+1144,giant monster,117,giant monster,giant robot,giant robots,giant ape,giant spider,0,0,1,1,1,1,1
+1145,patrick stewart,118,jimmy stewart,NA,patrick wilson,patrick swayze,patrick stewart,0,0,1,0,1,1,1
+1158,excellent example,119,excellent support,excellent work,excellent choice,good examples,excellent adventure,3,0.6,1,1,1,1,1
+1174,central character,120,central figure,central idea,central characters,central theme,central character,0,0,1,1,1,1,1
+1178,missed opportunity,121,NA,wasted opportunity,missed opportunities,missed opportunity,NA,0,0,0,1,1,1,0
+1180,simple way,122,simple things,simple rules,effective use,simple life,subtle way,0,0,1,1,1,1,1
+1195,sure didnt,123,didnt work,didnt feel,sure didnt,i didnt,didnt pay,0,0,1,1,1,1,1
+1201,same tone,124,overall tone,same tone,franchot tone,particular note,serious tone,0,0,1,1,1,1,1
+1205,carole lombard,125,NA,NA,NA,carole lombard,NA,0,0,0,0,0,1,0
+1228,internal affairs,126,NA,internal affairs,NA,infernal affairs,internal logic,0,0,0,1,0,1,1
+1229,many hollywood,127,typical hollywood,many filmmakers,mainstream hollywood,hollywood hotel,many awards,0,0,1,1,1,1,1
+1233,last year,128,last quarter,last weekend,new year,last wave,last month,0,0,1,1,1,1,1
+1245,same man,129,strong man,last man,fourth man,ordinary man,perfect man,0,0,1,1,1,1,1
+1259,young mans,130,white mans,mans life,old mans,dead mans,young mans,0,0,1,1,1,1,1
+1266,past years,131,recent past,past year,leap years,previous efforts,past history,0,0,1,1,1,1,1
+1287,low rating,132,overall rating,corporate ladder,good rating,low rating,low ratings,0,0,1,1,1,1,1
+1298,likable characters,133,funny characters,stereotypical characters,despicable characters,sympathetic character,believable characters,5,1,1,1,1,1,1
+1300,lucio fulci,134,NA,lucio fulci,NA,NA,NA,0,0,0,1,0,0,0
+1307,own father,135,own daughter,own son,real father,abusive husband,own childhood,0,0,1,1,1,1,1
+1336,strong sense,136,strong message,mixed feelings,strong presence,sixth sense,strong word,3,0.6,1,1,1,1,1
+1337,myrna loy,137,NA,NA,myrna loy,NA,NA,0,0,0,0,1,0,0
+1349,good humor,138,dry wit,good storytelling,good humor,subtle humor,black humor,0,0,1,1,1,1,1
+1356,screen time,139,screen play,screen time,blue screen,green screen,screen presence,0,0,1,1,1,1,1
+1358,high school,140,elementary school,high fashion,high drama,high tech,high school,0,0,1,1,1,1,1
+1379,realistic depiction,141,realistic drama,realistic manner,realistic portrayal,accurate portrayal,realistic view,0,0,1,1,1,1,1
+1388,double bill,142,double exposure,buffalo bill,kill bill,triple threat,double bill,0,0,1,1,1,1,1
+1400,interesting movie,143,predictable movie,beautiful movie,disturbing movie,interesting movie,memorable movie,0,0,1,1,1,1,1
+1403,low quality,144,same quality,low expectations,low key,low self,poor quality,0,0,1,1,1,1,1
+1413,sexual abuse,145,sexual humor,sexual abuse,sexual references,animal abuse,sexual scenes,5,1,1,1,1,1,1
+1425,second installment,146,final installment,second installment,second sequel,third installment,first installment,0,0,1,1,1,1,1
+1472,same movie,147,final movie,right movie,actual movie,western movie,particular movie,0,0,1,1,1,1,1
+1479,other viewers,148,young viewers,live feed,many viewers,other viewers,other users,0,0,1,1,1,1,1
+1480,dull movie,149,uninteresting movie,boring movie,dull boring,boring film,dull film,0,0,1,1,1,1,1
+1485,neil simon,150,NA,neil simon,simon pegg,neil gaiman,neil simons,0,0,0,1,1,1,1
+1490,basic premise,151,basic premise,initial premise,basic story,same premise,basic idea,0,0,1,1,1,1,1
+1496,gunga din,152,NA,gunga din,NA,NA,NA,0,0,0,1,0,0,0
+1514,lisa kudrow,153,eva longoria,lisa kudrow,keanu reeves,toni collette,erika christensen,0,0,1,1,1,1,1
+1518,gary cooper,154,indiana jones,gary busey,kemble cooper,gary sinise,bret carr,0,0,1,1,1,1,1
+1539,cold water,155,heavy water,cold water,cold heaven,dark water,cold case,0,0,1,1,1,1,1
+1548,romantic relationship,156,interracial romance,romantic relationship,serious relationship,romantic interest,incestuous relationship,0,0,1,1,1,1,1
+1551,general idea,157,general idea,general hospital,general release,general store,general rule,0,0,1,1,1,1,1
+1554,bad thing,158,bad things,bad times,bad thing,bad person,bad wig,1,0.2,1,1,1,1,1
+1566,red eyes,159,red herrings,blue velvet,red toolbox,red buttons,red sox,0,0,1,1,1,1,1
+1575,same house,160,last house,big house,huge house,same house,full house,0,0,1,1,1,1,1
+1594,whole planet,161,red planet,forbidden planet,entire planet,battlefield earth,whole planet,0,0,1,1,1,1,1
+1596,vincent cassel,162,NA,vincent cassel,val kilmer,vincent price,seymour cassel,0,0,0,1,1,1,1
+1599,other roles,163,other roles,other performers,respective roles,other role,leading roles,0,0,1,1,1,1,1
+1600,foreign films,164,foreign movies,foreign films,foreign policy,foreign country,foreign film,0,0,1,1,1,1,1
+1603,hidden treasure,165,hidden treasure,hidden dragon,NA,hidden gem,hidden frontier,0,0,1,1,0,1,1
+1605,other versions,166,other versions,different versions,other version,previous versions,many versions,0,0,1,1,1,1,1
+1611,kevin kline,167,ryan oneal,kevin bacon,doug mcclure,kevin spacey,kevin kline,0,0,1,1,1,1,1
+1613,devil dog,168,dog day,guardian angel,devil hunter,bite dog,elephant walk,0,0,1,1,1,1,1
+1630,major spoilers,169,major spoiler,possible spoilers,minor spoilers,possible spoiler,major spoilers,0,0,1,1,1,1,1
+1641,few twists,170,unexpected twist,enough twists,many twists,new twists,unexpected twists,0,0,1,1,1,1,1
+1655,cheap way,171,cheap thrill,cheap shot,cheap attempt,cheap i,cheap thrills,0,0,1,1,1,1,1
+1663,big fan,172,big fan,true fan,big fans,great fan,huge fan,0,0,1,1,1,1,1
+1664,good performance,173,fine performance,good quality,early performance,credible performance,excellent performance,0,0,1,1,1,1,1
+1666,actual events,174,important events,true events,bizarre events,actual fact,actual events,0,0,1,1,1,1,1
+1669,mel brooks,175,NA,mel gibsons,NA,NA,mel brooks,0,0,0,1,0,0,1
+1670,private eye,176,private media,private eye,keen eye,public eye,private snafu,0,0,1,1,1,1,1
+1672,police officer,177,commanding officer,parole officer,superior officer,police story,police officer,0,0,1,1,1,1,1
+1683,slow pace,178,slow moving,good pace,slow motion,slow pacing,right pace,0,0,1,1,1,1,1
+1690,mary ann,179,mary kornman,mary woronov,ann sheridan,shelley winters,mary ann,0,0,1,1,1,1,1
+1753,lex luthor,180,NA,NA,lex luthor,NA,NA,0,0,0,0,1,0,0
+1757,busy phillips,181,NA,NA,busy philipps,NA,busy phillips,0,0,0,0,1,0,1
+1763,good camera,182,good camera,bad camera,great camera,shaky camera,poor camera,0,0,1,1,1,1,1
+1771,good reviews,183,few reviews,positive reviews,many reviews,rave reviews,other reviews,0,0,1,1,1,1,1
+1773,polar bear,184,teddy bear,polar bears,polar bear,NA,polar opposite,0,0,1,1,1,0,1
+1775,sonny chiba,185,NA,NA,NA,NA,sonny chiba,0,0,0,0,0,0,1
+1780,dramatic impact,186,dramatic turn,sudden impact,double impact,global warming,dramatic effect,0,0,1,1,1,1,1
+1831,united kingdom,187,lost kingdom,united nations,united states,united kingdom,NA,0,0,1,1,1,1,0
+1856,favourite character,188,favourite character,favorite characters,favourite actors,favorite character,favourite scene,0,0,1,1,1,1,1
+1862,brian cox,189,todd sheets,sandy dennis,ronny cox,NA,brian cox,0,0,1,1,1,0,1
+1868,small town,190,little town,fictional town,small village,entire town,coastal town,0,0,1,1,1,1,1
+1883,difficult task,191,NA,NA,delicate balance,impossible task,difficult task,0,0,0,0,1,1,1
+1885,sean connery,192,sean connery,sean penns,sean pertwee,hopalong cassidy,sean penn,0,0,1,1,1,1,1
+1923,maltese falcon,193,NA,NA,NA,NA,maltese falcon,0,0,0,0,0,0,1
+1933,wild things,194,wild ride,wild west,wild things,wild side,wild bill,0,0,1,1,1,1,1
+1934,michael douglas,195,douglas fairbanks,anthony mann,michael douglas,michael caine,michael nyqvist,0,0,1,1,1,1,1
+1937,good entertainment,196,light entertainment,pure entertainment,little entertainment,great entertainment,mindless entertainment,0,0,1,1,1,1,1
+1984,notable exceptions,197,notable exception,NA,notable exceptions,NA,few exceptions,0,0,1,0,1,0,1
+1991,fbi agent,198,cia agent,fbi agent,fbi story,NA,federal agents,0,0,1,1,1,0,1
+2037,japanese movie,199,japanese animation,chinese movie,japanese woman,japanese girl,japanese culture,0,0,1,1,1,1,1
+2048,slapstick comedy,200,slapstick comedy,slapstick humor,screwball comedy,snl skit,situational comedy,0,0,1,1,1,1,1
+2058,funny thing,201,funny things,funny i,loud funny,weird thing,funny thing,0,0,1,1,1,1,1
+2065,shawshank redemption,202,NA,NA,NA,shawshank redemption,NA,0,0,0,0,0,1,0
+2070,terrific actor,203,superb actor,terrific actor,talented actor,fantastic actor,amazing actor,0,0,1,1,1,1,1
+2080,other parts,204,important parts,many parts,few parts,good parts,private parts,0,0,1,1,1,1,1
+2083,facial expression,205,NA,facial expressions,facial hair,facial expression,NA,0,0,0,1,1,1,0
+2119,cerebral palsy,206,NA,cerebral palsy,NA,spinal tap,muscular dystrophy,0,0,0,1,0,1,1
+2128,own reality,207,own destiny,virtual reality,own personality,own stunts,own reality,0,0,1,1,1,1,1
+2136,good movie,208,good zombie,outstanding movie,good picture,okay movie,important movie,5,1,1,1,1,1,1
+2141,avid fan,209,longtime fan,avid fan,dedicated fan,avid reader,loyal fan,0,0,1,1,1,1,1
+2145,eddie murphy,210,eddie izzard,eddie murphy,cillian murphy,eddie murphys,lucas buck,-1,-0.2,1,1,1,1,1
+2163,western culture,211,pop culture,western front,western civilization,western culture,chinese culture,0,0,1,1,1,1,1
+2185,i sure,212,frankly i,i question,i hate,i guess,i try,-1,-0.2,1,1,1,1,1
+2194,donald pleasance,213,donald sutherland,NA,NA,NA,donald pleasance,0,0,1,0,0,0,1
+2199,psychological thriller,214,erotic thriller,psychological thrillers,political thriller,psychological study,supernatural thriller,0,0,1,1,1,1,1
+2201,dumb ass,215,NA,dumb blonde,dumb ass,bad ass,kick ass,0,0,0,1,1,1,1
+2213,little suspense,216,little suspense,good suspense,little romance,real suspense,much suspense,0,0,1,1,1,1,1
+2249,high level,217,high concept,high price,high praise,high energy,low level,0,0,1,1,1,1,1
+2253,david morse,218,david morse,alan hale,david lynch,david dorfman,gillian anderson,0,0,1,1,1,1,1
+2254,brief moments,219,brief cameo,brief appearance,brief encounter,tense moments,brief scene,0,0,1,1,1,1,1
+2258,rich man,220,rich woman,rich guy,rich man,wealthy man,rich people,0,0,1,1,1,1,1
+2264,first episode,221,great episode,single episode,final episode,april fools,first episodes,0,0,1,1,1,1,1
+2306,fairy tale,222,fairy tale,cautionary tale,simple tale,tragic tale,fairy tales,0,0,1,1,1,1,1
+2307,eli wallach,223,NA,eli roth,NA,eli wallach,NA,0,0,0,1,0,1,0
+2310,cuckoos nest,224,NA,cuckoos nest,NA,NA,NA,0,0,0,1,0,0,0
+2314,hugh jackman,225,ewan mcgregor,chloe franks,hugh laurie,hugh dancy,ethan hawke,0,0,1,1,1,1,1
+2318,young john,226,young john,young michael,john ford,john garfield,john cusack,0,0,1,1,1,1,1
+2337,fred macmurray,227,ernie sabella,fred macmurray,fred gwynne,fred astaire,NA,0,0,1,1,1,1,0
+2342,freddy vs,228,freddy krueger,vs zombies,freddy vs,good vs,NA,0,0,1,1,1,1,0
+2350,main reason,229,main action,main reasons,main focus,main problem,main issue,0,0,1,1,1,1,1
+2386,wonderful film,230,marvelous film,watchable film,touching film,musical film,memorable film,5,1,1,1,1,1,1
+2389,ed harris,231,ed begley,ed harris,ed wood,ed woods,jared harris,0,0,1,1,1,1,1
+2390,major part,232,major difference,major part,major studios,important part,major studio,0,0,1,1,1,1,1
+2407,local store,233,local library,local theater,web site,local video,local sheriff,0,0,1,1,1,1,1
+2408,boogie nights,234,NA,NA,NA,arabian nights,boogie nights,0,0,0,0,0,1,1
+2413,emma roberts,235,julia ross,emma thompsons,emma roberts,NA,sophia loren,0,0,1,1,1,0,1
+2496,good show,236,little show,good show,good television,next show,only show,0,0,1,1,1,1,1
+2510,right side,237,down side,left field,right frame,right wing,bad side,0,0,1,1,1,1,1
+2516,musical sequences,238,musical numbers,musical sequence,musical sequences,musical number,musical moments,0,0,1,1,1,1,1
+2538,daily lives,239,daily life,NA,normal lives,daily show,daily lives,0,0,1,0,1,1,1
+2577,pretty face,240,pretty face,straight face,familiar face,NA,baby face,0,0,1,1,1,0,1
+2579,same scene,241,opening scene,entire scene,disturbing scene,early scene,great scene,0,0,1,1,1,1,1
+2584,lesbian vampires,242,lesbian vampire,lesbian love,NA,lesbian vampires,first vampires,0,0,1,1,0,1,1
+2656,gwyneth paltrow,243,gwyneth paltrow,uma thurman,nicole kidman,gena rowlands,sissy spacek,0,0,1,1,1,1,1
+2660,final result,244,final result,disastrous results,final part,final solution,final thoughts,0,0,1,1,1,1,1
+2675,illegal immigrant,245,NA,illegal immigrant,NA,illegal immigrants,NA,0,0,0,1,0,1,0
+2692,personal experience,246,personal level,prior knowledge,unique experience,personal favorites,personal experiences,0,0,1,1,1,1,1
+2720,andy dick,247,andy hardy,andy dick,andy stitzer,kim novak,andy warhol,0,0,1,1,1,1,1
+2732,nathan lane,248,nathan detroit,nathan lane,lois lane,NA,rosemary lane,0,0,1,1,1,0,1
+2742,hal hartley,249,hal hartley,hal roach,NA,vivian blaine,NA,0,0,1,1,0,1,0
+2759,american movie,250,american characters,american remake,american version,american cinema,denzel washington,0,0,1,1,1,1,1
+2760,elia kazan,251,NA,NA,NA,elia kazan,NA,0,0,0,0,0,1,0
+2789,directorial effort,252,directorial debut,directorial effort,NA,directorial style,NA,0,0,1,1,0,1,0
+2795,flesh eating,253,NA,NA,flesh eating,raw meat,fried worms,0,0,0,0,1,1,1
+2800,good acting,254,acting lessons,acting job,acting class,great acting,acting talents,0,0,1,1,1,1,1
+2809,grand prix,255,grand island,grand scale,grand total,grand canyon,grand prix,0,0,1,1,1,1,1
+2819,same kind,256,same message,same subject,same reaction,same clothes,same effect,-1,-0.2,1,1,1,1,1
+2823,good taste,257,cheese factor,good mix,poor taste,bad taste,first taste,0,0,1,1,1,1,1
+2827,stupid thing,258,cruel intentions,stupid i,stupid pointless,stupid idea,stupid things,3,0.6,1,1,1,1,1
+2833,good job,259,solid job,masterful job,wonderful job,amazing job,bad job,0,0,1,1,1,1,1
+2837,british accent,260,russian accent,french accent,german accent,european accents,american accent,0,0,1,1,1,1,1
+2843,shia labeouf,261,NA,shia labeouf,NA,NA,NA,0,0,0,1,0,0,0
+2851,naked girls,262,naked woman,naked mile,naked spur,naked gun,naked brothers,0,0,1,1,1,1,1
+2856,good actress,263,great actress,fine actress,bad actress,wonderful actress,favorite actress,0,0,1,1,1,1,1
+2863,low budget,264,supposed budget,decent budget,huge budget,low budget,low rent,0,0,1,1,1,1,1
+2865,historical context,265,historical figure,cultural references,historical value,historical events,historical inaccuracies,0,0,1,1,1,1,1
+2872,gopal varma,266,gopal varma,amrita rao,ramgopal varma,nikhil advani,rajpal yadav,0,0,1,1,1,1,1
+2878,good flick,267,little flick,lucille ball,good slasher,great flick,chick flick,0,0,1,1,1,1,1
+2885,romantic movie,268,romantic comedy,romantic love,romantic comedies,romantic leads,romantic subplot,0,0,1,1,1,1,1
+2888,eytan fox,269,NA,NA,NA,eytan fox,NA,0,0,0,0,0,1,0
+2914,scifi movies,270,scifi action,fi channel,bad scifi,good scifi,sci fi,0,0,1,1,1,1,1
+2916,independent movie,271,independent film,independent movie,independent movies,independent woman,independent horror,0,0,1,1,1,1,1
+2933,inner turmoil,272,inner conflict,inner workings,solar crisis,inner strength,inner demons,0,0,1,1,1,1,1
+2958,many words,273,few words,many words,last words,other words,many references,0,0,1,1,1,1,1
+2988,professional actors,274,professional actors,professional critics,professional wrestling,professional film,nonprofessional actors,0,0,1,1,1,1,1
+2992,beautiful woman,275,beautiful girls,crazy woman,beautiful people,intelligent woman,beautiful scene,0,0,1,1,1,1,1
+2994,silent movie,276,silent version,silent night,silent film,silent movies,silent movie,0,0,1,1,1,1,1
+3004,rare gem,277,rare example,rare treat,rare gem,true gem,little gem,0,0,1,1,1,1,1
+3011,good guy,278,poor guy,only guy,perfect guy,first guy,guy thing,-1,-0.2,1,1,1,1,1
+3020,own way,279,own face,own rules,own needs,own thing,open mind,0,0,1,1,1,1,1
+3031,good plot,280,interesting plot,enough plot,good plots,weak plot,decent plot,0,0,1,1,1,1,1
+3038,white man,281,white people,white chicks,white boys,white fire,white person,0,0,1,1,1,1,1
+3074,only redeeming,282,redeeming qualities,only redeeming,single redeeming,redeeming quality,redeeming feature,0,0,1,1,1,1,1
+3079,gay couple,283,arranged marriage,gay marriage,young gay,lesbian sex,gay people,0,0,1,1,1,1,1
+3104,heavy metal,284,mixed bag,heavy traffic,rancid aluminium,heavy metal,full metal,0,0,1,1,1,1,1
+3108,bourne series,285,bourne series,bourne ultimatum,NA,bourne movies,NA,0,0,1,1,0,1,0
+3116,same style,286,same style,unique style,gothic atmosphere,old style,standard fare,0,0,1,1,1,1,1
+3117,good dialogue,287,great dialogue,witty dialogue,intelligent dialogue,bad dialogue,terrible dialogue,0,0,1,1,1,1,1
+3126,good game,288,actual game,good match,video games,video game,big game,0,0,1,1,1,1,1
+3127,same plot,289,general plot,unexpected plot,simple plot,obvious plot,central plot,0,0,1,1,1,1,1
+3131,urban legend,290,NA,urban life,urban cowboy,urban legend,urban legends,0,0,0,1,1,1,1
+3139,sad fact,291,sad thing,sad moments,sad fact,sad excuse,sad commentary,0,0,1,1,1,1,1
+3148,amazing i,292,memorable i,excellent i,amazing mr,awesome i,unbelievable i,0,0,1,1,1,1,1
+3161,german soldiers,293,german resistance,german army,german people,german shepherd,japanese soldiers,0,0,1,1,1,1,1
+3182,many elements,294,key elements,other elements,certain elements,many elements,comedic elements,0,0,1,1,1,1,1
+3187,super hero,295,super mario,super hero,NA,super powers,NA,0,0,1,1,0,1,0
+3192,maureen stapleton,296,NA,cathy moriarty,thelma ritter,norma shearer,maureen stapleton,0,0,0,1,1,1,1
+3193,digital animation,297,universal studios,digital effects,digital animation,traditional animation,digital video,0,0,1,1,1,1,1
+3209,mary lou,298,cindy lou,mary lou,notre dame,NA,lou diamond,0,0,1,1,1,0,1
+3220,many others,299,many places,other fans,many others,many critics,many directors,0,0,1,1,1,1,1
+3225,bubonic plague,300,NA,NA,bubonic plague,pneumonic plague,NA,0,0,0,0,1,1,0
+3234,great actors,301,great comedians,great supporting,experienced actors,wonderful actors,good actors,0,0,1,1,1,1,1
+3255,emotional experience,302,emotional scene,emotional connection,cinematic experience,emotional experience,emotional impact,0,0,1,1,1,1,1
+3257,same themes,303,main themes,similar themes,same themes,similar theme,catchy theme,2,0.4,1,1,1,1,1
+3258,alec baldwin,304,alec guinness,alec baldwin,NA,NA,NA,0,0,1,1,0,0,0
+3259,hannibal lecter,305,NA,NA,NA,NA,hannibal lecter,0,0,0,0,0,0,1
+3260,middle east,306,middle ground,middle east,east side,middle section,east hampton,0,0,1,1,1,1,1
+3269,hot stuff,307,hot summer,hot chick,hot chicks,hot millions,hot pursuit,0,0,1,1,1,1,1
+3275,many errors,308,few mistakes,glaring errors,many mistakes,factual errors,many errors,0,0,1,1,1,1,1
+3280,great mystery,309,real mystery,complete mystery,great mystery,good mystery,great mysteries,0,0,1,1,1,1,1
+3308,same i,310,second i,white i,few i,much i,unique i,0,0,1,1,1,1,1
+3309,constant state,311,mental state,current state,emotional state,constant references,constant state,0,0,1,1,1,1,1
+3310,certain aspects,312,different aspects,relevant today,particular order,negative aspects,certain charm,0,0,1,1,1,1,1
+3311,obvious reason,313,ulterior motives,obvious choice,logical explanation,obvious lack,obvious reason,0,0,1,1,1,1,1
+3313,private detective,314,private investigator,private detective,detective agency,private ryan,detective work,-1,-0.2,1,1,1,1,1
+3319,ricky gervais,315,cedric hardwicke,justin timberlake,ricky gervais,NA,NA,0,0,1,1,1,0,0
+3326,good way,316,good measure,good day,good effect,good time,possible way,1,0.2,1,1,1,1,1
+3331,interesting way,317,interesting way,interesting things,interesting ideas,interesting idea,interesting concept,0,0,1,1,1,1,1
+3333,small island,318,pearl harbor,small island,long island,remote island,mysterious island,0,0,1,1,1,1,1
+3337,kong action,319,hong kong,hk action,kong action,NA,kong movie,0,0,1,1,1,0,1
+3347,deep dark,320,twilight zone,dark shadows,deep meaning,deep dark,dark heart,0,0,1,1,1,1,1
+3349,early seventies,321,late seventies,early eighties,early seventies,early nineties,late eighties,0,0,1,1,1,1,1
+3354,total lack,322,total mess,total lack,total absence,total failure,total recall,0,0,1,1,1,1,1
+3357,first murder,323,perfect murder,killing spree,second murder,first murder,brutal murder,0,0,1,1,1,1,1
+3373,same age,324,modern age,right age,same age,own age,new age,0,0,1,1,1,1,1
+3384,few moments,325,serious moments,last moments,interesting moments,little moments,loud moments,0,0,1,1,1,1,1
+3397,friday night,326,saturday night,rainy afternoon,friday nights,prom night,late night,0,0,1,1,1,1,1
+3399,same line,327,last line,same line,single line,punch line,bottom line,0,0,1,1,1,1,1
+3405,main character,328,main guy,main role,main storyline,main villain,main protagonist,5,1,1,1,1,1,1
+3432,elisha cook,329,lorne greene,elisha cook,NA,NA,leigh cook,0,0,1,1,0,0,1
+3436,good family,330,new family,real family,own family,abc family,dysfunctional family,0,0,1,1,1,1,1
+3443,aztec rex,331,NA,NA,NA,aztec rex,NA,0,0,0,0,0,1,0
+3455,ben chaplin,332,charlie chaplin,NA,ben stiller,NA,ben chaplin,0,0,1,0,1,0,1
+3456,vietnam vets,333,NA,NA,vietnam vets,NA,vietnam vet,0,0,0,0,1,0,1
+3470,teen movie,334,teen years,teen slasher,teen movie,kids movie,teen horror,0,0,1,1,1,1,1
+3475,female lead,335,female leads,female lead,lead singer,lead female,male lead,0,0,1,1,1,1,1
+3477,other women,336,other men,black women,hard men,leading ladies,sexy women,0,0,1,1,1,1,1
+3490,dirty work,337,original dirty,dirty harry,hard work,dirty dozen,dirty work,0,0,1,1,1,1,1
+3502,eric stoltz,338,eric bana,eric roberts,eric linden,eric valette,eric stoltz,0,0,1,1,1,1,1
+3506,great art,339,art direction,great literature,cover art,modern art,great art,0,0,1,1,1,1,1
+3518,much money,340,easy money,enough money,much sums,little money,good money,0,0,1,1,1,1,1
+3522,awful story,341,lame story,inconvenient truth,tragic story,stupid story,silly story,0,0,1,1,1,1,1
+3523,soft core,342,soft spot,NA,soft focus,soft core,hard core,0,0,1,0,1,1,1
+3529,steven soderbergh,343,steven spielberg,steven soderbergh,steven seagal,benicio del,liv tyler,0,0,1,1,1,1,1
+3554,full well,344,full impact,open arms,full length,back cover,full range,0,0,1,1,1,1,1
+3563,hillary duff,345,hilary duff,olympia dukakis,NA,hillary duff,NA,0,0,1,1,0,1,0
+3564,little boy,346,good boy,invisible boy,little girl,bad boy,little man,0,0,1,1,1,1,1
+3577,same category,347,NA,NA,latter category,same category,good category,0,0,0,0,1,1,1
+3583,human mind,348,human soul,human psyche,human emotions,human nature,human body,0,0,1,1,1,1,1
+3591,same story,349,first story,underdog story,straight story,second story,third story,0,0,1,1,1,1,1
+3594,strange things,350,scary things,odd thing,strange combination,strange mix,weird science,0,0,1,1,1,1,1
+3596,only point,351,low point,first point,final point,whole point,only value,0,0,1,1,1,1,1
+3600,special way,352,special forces,special place,special edition,special interest,special i,-1,-0.2,1,1,1,1,1
+3603,technical aspects,353,genetic engineering,technical standpoint,technical side,technical quality,technical problems,0,0,1,1,1,1,1
+3637,innocent victim,354,innocent victims,innocent bystanders,escaped convict,innocent man,innocent victim,0,0,1,1,1,1,1
+3640,great example,355,great use,great works,great success,great potential,great number,0,0,1,1,1,1,1
+3649,poor way,356,poor effects,poor direction,poor i,poor people,poor adaption,0,0,1,1,1,1,1
+3650,christian faith,357,catholic church,christian school,christian viel,christian slater,christian faith,0,0,1,1,1,1,1
+3663,fast forward,358,quick buck,fast moving,fast forward,straight forward,forward button,0,0,1,1,1,1,1
+3666,early years,359,next years,early life,early years,early age,early part,0,0,1,1,1,1,1
+3667,several episodes,360,early episodes,other episodes,later episodes,few episodes,new episodes,0,0,1,1,1,1,1
+3712,serious movie,361,violent movie,serious drama,serious thriller,serious horror,serious actor,0,0,1,1,1,1,1
+3743,original way,362,original play,original form,original show,original idea,original cut,0,0,1,1,1,1,1
+3744,tragic death,363,tragic event,gruesome death,sudden death,tragic death,tragic accident,0,0,1,1,1,1,1
+3754,unintentional humor,364,unintentional hilarity,potty humor,unintentional humor,unintentional comedy,unintentional laughs,0,0,1,1,1,1,1
+3765,lee curtis,365,cathy lee,tommy lee,lee curtis,lee majors,lee j,0,0,1,1,1,1,1
+3797,gus van,366,gus van,van der,dick van,van sants,van damme,0,0,1,1,1,1,1
+3803,big one,367,big brother,big disappointment,big fight,big box,commercial breaks,3,0.6,1,1,1,1,1
+3815,second act,368,second act,third act,random acts,first act,final act,0,0,1,1,1,1,1
+3836,perfect example,369,perfect time,perfect sense,perfect way,perfect foil,perfect life,0,0,1,1,1,1,1
+3857,minor character,370,minor league,minor role,minor roles,minor characters,minor character,0,0,1,1,1,1,1
+3859,racial tensions,371,NA,racial tensions,NA,racial issues,racial stereotypes,0,0,0,1,0,1,1
+3862,good comedy,372,light comedy,musical comedy,dark comedy,bad comedy,good comedy,0,0,1,1,1,1,1
+3870,luke skywalker,373,luke wilson,luke skywalker,NA,darth vader,NA,0,0,1,1,0,1,0
+3885,supernatural powers,374,supernatural element,supernatural powers,morphin power,magical powers,austin powers,0,0,1,1,1,1,1
+3892,worth seeing,375,worth watching,NA,NA,worth seeing,worth buying,0,0,1,0,0,1,1
+3894,large amount,376,small amount,large percentage,vast majority,large portion,copious amounts,0,0,1,1,1,1,1
+3909,same person,377,right person,good person,average person,third person,first person,0,0,1,1,1,1,1
+3918,visual style,378,visual effects,visual flair,visual style,visual treat,costume design,5,1,1,1,1,1,1
+3929,porn movie,379,porn stars,popcorn movie,porn movie,soft porn,porn movies,0,0,1,1,1,1,1
+3933,horror movie,380,spanish horror,fantasy movie,real horror,feelgood movie,rubbish film,5,1,1,1,1,1,1
+3935,medical care,381,medical school,intensive care,medical care,medical student,much care,0,0,1,1,1,1,1
+3937,public service,382,secret service,public library,public service,public enemy,public domain,0,0,1,1,1,1,1
+3949,important role,383,good role,major role,important character,first role,important role,0,0,1,1,1,1,1
+3960,many people,384,random people,other people,only people,many lives,everyday people,0,0,1,1,1,1,1
+3968,good character,385,realistic character,excellent character,good characters,wonderful character,brilliant character,0,0,1,1,1,1,1
+3970,original novel,386,graphic novel,original book,science fiction,original trilogy,original screenplay,0,0,1,1,1,1,1
+3977,italian movie,387,italian director,italian directors,swiss cheese,italian horror,italian family,0,0,1,1,1,1,1
+3983,national anthem,388,national geographic,national security,national lampoon,national treasure,national anthem,0,0,1,1,1,1,1
+4009,good dialog,389,bad dialog,little dialog,great dialog,terrible dialog,witty dialog,0,0,1,1,1,1,1
+4010,good cast,390,great cast,incredible cast,good cast,brilliant cast,outstanding cast,0,0,1,1,1,1,1
+4031,true identity,391,true crime,own identity,mistaken identity,true meaning,true intentions,0,0,1,1,1,1,1
+4041,good shots,392,beautiful shots,same shots,cheap shots,great shots,sub par,0,0,1,1,1,1,1
+4053,bad movie,393,bad films,bad directing,mediocre movie,bad actor,poor movie,5,1,1,1,1,1,1
+4070,much blood,394,cold blood,flesh blood,fecal matter,fake blood,noble heart,0,0,1,1,1,1,1
+4084,original version,395,original text,english version,original lion,original broadway,original twist,0,0,1,1,1,1,1
+4103,good story,396,little story,wonderful story,good book,bad story,good story,0,0,1,1,1,1,1
+4121,rachel griffiths,397,alexandra staden,julian fellowes,rachel griffiths,natalie portman,rachel mcadams,0,0,1,1,1,1,1
+4124,other points,398,high points,low points,bad points,various points,different points,0,0,1,1,1,1,1
+4138,criminal justice,399,NA,supreme court,criminal mastermind,full justice,criminal justice,0,0,0,1,1,1,1
+4139,indian film,400,indian family,indian chief,indian films,indian girl,indian summer,0,0,1,1,1,1,1
+4143,own life,401,own imagination,own death,civilian life,quiet life,own lives,-1,-0.2,1,1,1,1,1
+4165,average movie,402,average horror,average joe,average action,average movie,below average,0,0,1,1,1,1,1
+4180,regular basis,403,NA,daily basis,regular intervals,regular basis,NA,0,0,0,1,1,1,0
+4189,complete control,404,complete disaster,creative control,complete control,complete failure,complete opposite,0,0,1,1,1,1,1
+4217,first third,405,first third,second class,first half,second half,third part,0,0,1,1,1,1,1
+4221,interesting story,406,interesting storyline,important story,cute story,predictable story,interesting twist,0,0,1,1,1,1,1
+4227,southern accent,407,NA,southern california,southern accent,southern drawl,southern accents,0,0,0,1,1,1,1
+4235,extreme violence,408,brutal violence,physical violence,gratuitous violence,violent acts,mindless violence,0,0,1,1,1,1,1
+4251,jose ferrer,409,NA,lorenzo lamas,jose iturbi,jose ferrer,luis guzman,0,0,0,1,1,1,1
+4271,same name,410,last name,first name,big name,omega code,real name,0,0,1,1,1,1,1
+4284,comedic talent,411,comedic timing,comic talent,comedic genius,comedic talents,uncanny ability,0,0,1,1,1,1,1
+4285,bela lugosi,412,NA,bela lugosi,NA,NA,NA,0,0,0,1,0,0,0
+4287,artful dodger,413,artful dodger,NA,NA,NA,NA,0,0,1,0,0,0,0
+4294,doesnt mean,414,doesnt end,doesnt look,doesnt work,doesnt matter,doesnt mean,0,0,1,1,1,1,1
+4302,south america,415,north america,american south,south africa,deep south,north pole,0,0,1,1,1,1,1
+4324,other problems,416,major problems,numerous problems,same problems,main problems,serious problems,0,0,1,1,1,1,1
+4348,long time,417,long stretches,long walk,long journey,long while,long term,0,0,1,1,1,1,1
+4352,moral message,418,moral center,moral message,clear message,moral values,powerful message,0,0,1,1,1,1,1
+4360,red queen,419,queen bee,red queen,queen victoria,blue raja,red lady,0,0,1,1,1,1,1
+4384,wall street,420,beat street,fourth wall,sesame street,main street,wall street,0,0,1,1,1,1,1
+4388,incredible journey,421,bogus journey,incredible hulk,incredible journey,maiden voyage,rollercoaster ride,0,0,1,1,1,1,1
+4392,paris hilton,422,paris je,paris hilton,las vegas,NA,NA,0,0,1,1,1,0,0
+4396,leslie howard,423,angela lansbury,NA,NA,leslie caron,leslie howard,0,0,1,0,0,1,1
+4428,happy i,424,sad i,entertaining i,glad i,disappointed i,happy couple,0,0,1,1,1,1,1
+4444,british film,425,british horror,british comedies,british version,british film,british movie,0,0,1,1,1,1,1
+4457,good performances,426,solid performances,wooden performances,poor performances,wonderful performances,notable performances,5,1,1,1,1,1,1
+4461,footlight parade,427,footlight parade,NA,NA,NA,NA,0,0,1,0,0,0,0
+4464,great thing,428,great piece,great atmosphere,great pains,great way,great twist,0,0,1,1,1,1,1
+4469,grady harp,429,NA,NA,NA,NA,grady harp,0,0,0,0,0,0,1
+4491,jean claude,430,jean peters,jean harlow,jean reno,jean arthur,jean simmons,0,0,1,1,1,1,1
+4495,good music,431,horrible music,excellent music,dramatic music,incidental music,classical music,0,0,1,1,1,1,1
+4503,greek tragedy,432,NA,greek tragedy,NA,greek chorus,NA,0,0,0,1,0,1,0
+4516,same era,433,victorian era,modern era,silent era,new era,same era,0,0,1,1,1,1,1
+4520,first film,434,last film,single film,first movies,first films,ambitious film,1,0.2,1,1,1,1,1
+4523,military training,435,military training,advanced screening,military base,luzhin defence,colleen camp,0,0,1,1,1,1,1
+4524,ten foot,436,left foot,ten feet,wooden horse,ten commandments,ten foot,0,0,1,1,1,1,1
+4546,grinch stole,437,NA,NA,NA,NA,grinch stole,0,0,0,0,0,0,1
+4573,nuclear bomb,438,terrorist attack,nuclear family,lethal weapon,nuclear war,nuclear power,0,0,1,1,1,1,1
+4578,good production,439,wonderful production,cheap production,entire production,great production,original production,0,0,1,1,1,1,1
+4592,fresh air,440,hot air,dead air,NA,fresh air,thin air,0,0,1,1,0,1,1
+4596,rental place,441,rental store,rental place,free rental,melrose place,rental fee,0,0,1,1,1,1,1
+4597,martial art,442,martial law,martial artist,martial artists,martial arts,martial art,0,0,1,1,1,1,1
+4603,other things,443,important things,few things,other guys,such thing,such luck,0,0,1,1,1,1,1
+4608,mysterious man,444,mysterious stranger,strange man,mysterious death,invisible man,mysterious man,0,0,1,1,1,1,1
+4615,uwe boll,445,NA,NA,uwe boll,uwe bolls,NA,0,0,0,0,1,1,0
+4648,second rate,446,third rate,ward bond,second rate,first rate,i rate,0,0,1,1,1,1,1
+4650,ive come,447,ive spent,ive gotta,ive come,ive read,ive heard,0,0,1,1,1,1,1
+4667,invisible maniac,448,invisible maniac,NA,homicidal maniac,NA,femme fatale,0,0,1,0,1,0,1
+4669,sure youll,449,sure youll,NA,youll get,NA,youll find,0,0,1,0,1,0,1
+4677,sure im,450,sure im,im sorry,ok im,im gonna,im sick,0,0,1,1,1,1,1
+4713,pretty girl,451,bad girl,pretty woman,pretty boy,funny girl,attractive girl,0,0,1,1,1,1,1
+4715,awful acting,452,horrible acting,pathetic acting,awful acting,terrible acting,amateurish acting,0,0,1,1,1,1,1
+4722,evil man,453,evil guy,evil people,pure evil,barbarian brothers,evil force,0,0,1,1,1,1,1
+4739,loose cannon,454,NA,NA,loose cannon,dyan cannon,loose ends,0,0,0,0,1,1,1
+4742,short time,455,short time,short attention,short run,short list,short period,0,0,1,1,1,1,1
+4749,little something,456,little doubt,little happens,little richard,little attention,little ones,0,0,1,1,1,1,1
+4765,stephen king,457,stephen rea,stephen kings,henry fool,stephen king,duke ellington,0,0,1,1,1,1,1
+4774,ridiculous plot,458,convoluted plot,nonexistent plot,terrible plot,predictable plot,unbelievable plot,0,0,1,1,1,1,1
+4783,final battle,459,gun battle,final fight,final confrontation,final battle,final showdown,0,0,1,1,1,1,1
+4797,first shot,460,final shot,long shot,big shot,same shot,single shot,0,0,1,1,1,1,1
+4800,wish id,461,wish id,NA,id heard,id love,id recommend,0,0,1,0,1,1,1
+4803,cinema history,462,european cinema,chinese history,spanish cinema,asian cinema,cinema history,0,0,1,1,1,1,1
+4807,tom hanks,463,tom berenger,tom hanks,tom barman,NA,tom cruise,0,0,1,1,1,0,1
+4835,small part,464,small piece,small community,small time,small kids,small children,0,0,1,1,1,1,1
+4844,first hour,465,amateur hour,second hour,first hour,first minute,rush hour,0,0,1,1,1,1,1
+4847,warren beatty,466,warren beatty,NA,philo vance,ned beatty,NA,0,0,1,0,1,1,0
+4850,same characters,467,white characters,different characters,different character,other characters,few characters,0,0,1,1,1,1,1
+4851,dvd version,468,dvd copy,unrated version,dvd release,widescreen version,dvd version,0,0,1,1,1,1,1
+4864,many stories,469,short stories,great stories,true stories,many stories,little stories,0,0,1,1,1,1,1
+4870,mutual respect,470,contractual obligation,due respect,mutual friend,mutual respect,NA,0,0,1,1,1,1,0
+4872,other tv,471,local television,other tv,good tv,original tv,other show,0,0,1,1,1,1,1
+4889,robin williams,472,vanessa williams,robin hood,robin williams,dee williams,bette davis,0,0,1,1,1,1,1
+4898,stupid movie,473,ridiculous movie,silly film,stupid movie,stupid movies,lame movie,0,0,1,1,1,1,1
+4899,little bit,474,wee bit,little edie,little rough,small bit,tiny bit,0,0,1,1,1,1,1
+4937,incomprehensible mess,475,boring mess,incomprehensible mess,NA,NA,incoherent mess,3,1,1,1,0,0,1
+4943,seymour hoffman,476,truman capote,seymour hoffman,dustin hoffman,NA,NA,-1,-0.333333333,1,1,1,0,0
+4970,wide variety,477,wide berth,wide shut,wide awake,wide variety,wide audience,0,0,1,1,1,1,1
+4979,first world,478,outside world,corporate world,wonderful world,lost world,modern world,-1,-0.2,1,1,1,1,1
+4992,first series,479,second series,third series,previous series,endless series,new series,0,0,1,1,1,1,1
+4993,artistic choice,480,artistic merit,artistic integrity,artistic vision,odd choice,artistic license,4,0.8,1,1,1,1,1
+4995,sylvia kristel,481,scarlett johansson,NA,sylvia miles,NA,sylvia kristel,0,0,1,0,1,0,1
+5014,same title,482,main title,original title,title role,same title,intercontinental championship,0,0,1,1,1,1,1
+5032,gram parsons,483,gram parsons,NA,NA,NA,NA,0,0,1,0,0,0,0
+5036,memorable scenes,484,nice scenes,dramatic scenes,memorable characters,graphic scenes,memorable quotes,5,1,1,1,1,1,1
+5042,impressive performance,485,outstanding performance,incredible performance,superb performance,dramatic performance,magnificent performance,0,0,1,1,1,1,1
+5051,true masterpiece,486,real masterpiece,true masterpiece,cinematic masterpiece,absolute masterpiece,NA,0,0,1,1,1,1,0
+5076,different types,487,different names,different type,different backgrounds,different kinds,different angle,0,0,1,1,1,1,1
+5093,next day,488,doris day,next day,following day,same day,next door,0,0,1,1,1,1,1
+5100,steve buscemi,489,steve martin,harvey keitel,NA,steve biko,steve buscemi,0,0,1,1,0,1,1
+5119,positive thing,490,positive aspect,lasting impression,disappointing aspect,positive way,negative i,0,0,1,1,1,1,1
+5130,good action,491,decent action,nice action,little action,other action,good action,5,1,1,1,1,1,1
+5140,wonderful thing,492,wonderful moments,wonderful things,wonderful experience,wonderful time,wonderful example,0,0,1,1,1,1,1
+5144,new kind,493,new love,new place,new job,new way,new perspective,0,0,1,1,1,1,1
+5189,many flaws,494,other flaws,many flaws,only flaw,few flaws,many inconsistencies,0,0,1,1,1,1,1
+5195,same voice,495,same voice,own voice,original voice,great voice,singing voice,0,0,1,1,1,1,1
+5196,sarah silverman,496,NA,NA,sarah silverman,silverman program,benny goodman,0,0,0,0,1,1,1
+5208,green lake,497,snowy river,green lake,orlando bloom,green mile,big lake,0,0,1,1,1,1,1
+5233,wes cravens,498,wes cravens,NA,lindy chamberlain,wes craven,NA,0,0,1,0,1,1,0
+5257,mental illness,499,mental illness,mental hospital,mental institution,mental problems,mental breakdown,0,0,1,1,1,1,1
+5260,young child,500,unborn child,young child,middle child,young kids,young ones,0,0,1,1,1,1,1
+5268,bright light,501,purple rain,red light,green light,light touch,bright idea,0,0,1,1,1,1,1
+5269,german film,502,german expressionism,german version,german movie,german shepard,german film,0,0,1,1,1,1,1
+5280,modesty blaise,503,NA,NA,modesty blaise,NA,NA,0,0,0,0,1,0,0
+5292,many memories,504,loved ones,many memories,many flashbacks,recent memory,good memories,0,0,1,1,1,1,1
+5294,english language,505,english teacher,english literature,strong language,english language,original language,0,0,1,1,1,1,1
+5333,tony scott,506,randolph scott,flash gordon,joe don,tony soprano,c scott,0,0,1,1,1,1,1
+5344,young female,507,male population,female friends,white female,young womans,female friend,-1,-0.2,1,1,1,1,1
+5369,19th century,508,19th century,twentieth century,last century,18th century,17th century,0,0,1,1,1,1,1
+5390,young man,509,elephant man,elderly man,angry men,intelligent man,young doctor,-1,-0.2,1,1,1,1,1
+5393,whole city,510,kansas city,beautiful city,whole city,sin city,whole host,-1,-0.2,1,1,1,1,1
+5394,initial release,511,initial shock,limited release,original release,initial release,wide release,0,0,1,1,1,1,1
+5418,fine piece,512,complete piece,fine example,fine piece,worthless piece,ensemble piece,0,0,1,1,1,1,1
+5446,other reasons,513,same reasons,other reasons,other sources,many reasons,other reason,0,0,1,1,1,1,1
+5448,natural resources,514,limited resources,natural way,natural resources,natural born,natural beauty,0,0,1,1,1,1,1
+5469,good chemistry,515,good chemistry,great chemistry,excellent chemistry,brilliant scientist,fantastic chemistry,0,0,1,1,1,1,1
+5496,san diego,516,los angeles,NA,san diego,san francisco,santa claus,0,0,1,0,1,1,1
+5513,good direction,517,superb direction,bad direction,good direction,excellent direction,great direction,0,0,1,1,1,1,1
+5535,modern audiences,518,modern technology,modern viewers,modern society,modern audiences,contemporary setting,0,0,1,1,1,1,1
+5536,comic character,519,comic performance,memorable character,comic book,comic timing,comic genius,0,0,1,1,1,1,1
+5551,true love,520,much love,true love,first love,true heart,love interest,0,0,1,1,1,1,1
+5554,adrian pasdar,521,NA,NA,NA,NA,adrian pasdar,0,0,0,0,0,0,1
+5556,right way,522,right material,right mind,right time,right place,right direction,0,0,1,1,1,1,1
+5567,stop thinking,523,thought provoking,stop thinking,stop motion,wishful thinking,stop laughing,0,0,1,1,1,1,1
+5573,good score,524,low score,big score,musical score,high score,great score,0,0,1,1,1,1,1
+5586,dead people,525,homeless people,dead body,dead man,dead bodies,dead poets,0,0,1,1,1,1,1
+5592,fitting end,526,tail end,fitting end,bitter end,fitting tribute,NA,0,0,1,1,1,1,0
+5599,funny movie,527,funny story,amusing movie,hilarious movie,funny gags,funny show,0,0,1,1,1,1,1
+5609,only star,528,star wars,white star,major star,extra star,original star,0,0,1,1,1,1,1
+5620,mobile suit,529,mobile suits,NA,mobile phone,mobile suit,NA,0,0,1,0,1,1,0
+5627,awful movie,530,terrible movie,sad movie,horrible film,scary movies,awful movies,5,1,1,1,1,1,1
+5647,ian mcshane,531,charlton heston,ian holm,ian mcshane,ian ziering,ian mcdiarmid,0,0,1,1,1,1,1
+5660,margaret avery,532,margaret sullavan,margaret avery,fiona shaw,harriet hilliard,lucile watson,0,0,1,1,1,1,1
+5665,good sound,533,sound effects,early sound,bad sound,poor sound,sound quality,0,0,1,1,1,1,1
+5669,utter garbage,534,utter waste,complete garbage,pure garbage,utter lack,utter garbage,0,0,1,1,1,1,1
+5700,few songs,535,good songs,new songs,other songs,han solo,few songs,0,0,1,1,1,1,1
+5702,original footage,536,archive footage,new footage,raw footage,documentary footage,original footage,0,0,1,1,1,1,1
+5706,corky romano,537,NA,NA,NA,NA,corky romano,0,0,0,0,0,0,1
+5724,free time,538,free love,free speech,free i,free money,free time,0,0,1,1,1,1,1
+5734,good laugh,539,great laughs,laugh track,good laughs,i laugh,big laughs,0,0,1,1,1,1,1
+5757,frank morgan,540,frank sinatra,frank miller,frank morgan,stanley kubrick,stan laurel,0,0,1,1,1,1,1
+5774,timothy hutton,541,timothy hutton,timothy hines,timothy dalton,NA,timothy spall,0,0,1,1,1,0,1
+5775,physical appearance,542,physical contact,physical comedian,striking resemblance,physical presence,physical appearance,0,0,1,1,1,1,1
+5782,amrish puri,543,om puri,amrish puri,dolph lundgren,tadanobu asano,paresh rawal,0,0,1,1,1,1,1
+5794,old movie,544,old movie,old films,old episodes,old tv,old studio,0,0,1,1,1,1,1
+5800,good gore,545,much gore,extreme gore,good gore,little gore,nice gore,0,0,1,1,1,1,1
+5807,orson welles,546,NA,NA,NA,orson welles,citizen kane,0,0,0,0,0,1,1
+5819,audrey hepburn,547,betty boop,lauren bacall,rita hayworth,humphrey bogart,marilyn monroe,0,0,1,1,1,1,1
+5846,william h,548,william hurt,h macy,s hart,f murray,dutch henry,0,0,1,1,1,1,1
+5864,tyra banks,549,NA,elizabeth banks,NA,tyra banks,NA,0,0,0,1,0,1,0
+5866,big stars,550,real stars,other stars,main stars,ten stars,huge star,0,0,1,1,1,1,1
+5870,nina foch,551,NA,NA,NA,nina foch,NA,0,0,0,0,0,1,0
+5872,golden years,552,golden globe,golden child,golden age,golden globes,golden retriever,0,0,1,1,1,1,1
+5882,male nudity,553,gratuitous nudity,little nudity,female nudity,male nudity,frontal nudity,0,0,1,1,1,1,1
+5912,explicit sex,554,gratuitous sex,instant gratification,explicit sex,much sex,graphic sex,0,0,1,1,1,1,1
+5913,danny aiello,555,NA,greg kinnear,danny aiello,NA,danny glover,0,0,0,1,1,0,1
+5929,nice thing,556,nice piece,nice surprise,nice bit,nice try,nice way,0,0,1,1,1,1,1
+5945,former wife,557,former student,former life,estranged wife,former wife,ex girlfriend,0,0,1,1,1,1,1
+5958,pale shadow,558,grey owl,pale shadow,pale imitation,NA,NA,0,0,1,1,1,0,0
+5964,nastassja kinski,559,NA,NA,NA,NA,nastassja kinski,0,0,0,0,0,0,1
+5975,anil kapoor,560,akshaye khanna,shahid kapoor,prashant raj,anil kapoor,amitabh bachchan,0,0,1,1,1,1,1
+5982,clive owen,561,clive barker,owen wilson,lloyd kaufman,alfred hitchcock,clive owen,0,0,1,1,1,1,1
+5996,secret life,562,big secret,secret life,secret lives,top secret,secret weapon,0,0,1,1,1,1,1
+6000,pet cemetery,563,pet sematary,NA,NA,pet cemetery,burial ground,0,0,1,0,0,1,1
+6010,same situation,564,desperate situation,dire need,same situation,same fate,whole situation,0,0,1,1,1,1,1
+6014,bettie page,565,NA,front page,notorious bettie,bettie page,NA,0,0,0,1,1,1,0
+6044,mad mad,566,mad men,mad magician,mad max,mad mad,mad magazine,0,0,1,1,1,1,1
+6071,few jokes,567,same jokes,bad jokes,many jokes,inside jokes,inside joke,5,1,1,1,1,1,1
+6098,false move,568,false note,false advertising,false pretenses,bold move,false move,0,0,1,1,1,1,1
+6110,serial killer,569,serial killer,serial killers,zodiac killer,serial mom,professional killer,0,0,1,1,1,1,1
+6115,overall look,570,overall quality,overall effect,overall feeling,overall impression,overall feel,0,0,1,1,1,1,1
+6118,lana turner,571,NA,lana turner,kathleen turner,NA,NA,0,0,0,1,1,0,0
+6126,oh look,572,oh wait,oh man,oh please,hey lets,oh look,0,0,1,1,1,1,1
+6141,negative comments,573,few comments,negative side,negative comment,negative comments,positive comments,0,0,1,1,1,1,1
+6147,such questions,574,such questions,subject matter,many questions,such nonsense,such depth,0,0,1,1,1,1,1
+6152,political issues,575,political climate,political agenda,political situation,political statement,political message,0,0,1,1,1,1,1
+6182,empty space,576,empty acre,outer space,open spaces,empty space,deep space,0,0,1,1,1,1,1
+6183,emmanuelle devos,577,NA,NA,NA,NA,emmanuelle devos,0,0,0,0,0,0,1
+6202,upper class,578,upper hand,working class,upper crust,upper class,upper classes,0,0,1,1,1,1,1

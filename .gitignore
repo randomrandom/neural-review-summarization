@@ -105,12 +105,13 @@ ENV/
 data/__pycache__/
 data/datasets/__pycache__/
 data/*.txt
-model/embeddings/glove*
 data/*.tsv
+data/*.csv
+output/*.csv
+model/embeddings/glove*
 #*.ipynb_checkpoints
 #*.ipynb
 *.tsv
-*.csv
 *.pkl
 data/*.xlsx
 __pycache__

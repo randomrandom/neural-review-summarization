@@ -1,0 +1,190 @@
+List Id,Phrase,Cluster Label,W0,W1,W2,W3,W4,Good Words,Score,GW0,GW1,GW2,GW3,GW4
+23,frontal female nudity,0,NA,frontal female nudity,NA,NA,frontal male nudity,2,1,0,1,0,0,1
+26,good tv movie,1,classic movie channel,bad soap opera,average movie watcher,scifi channel movie,fox movie channel,3,0.6,1,1,1,1,1
+34,just doesnt work,2,NA,simply doesnt work,really doesnt matter,just doesnt work,NA,-1,-0.333333333,0,1,1,1,0
+36,entire police department,3,maximum security prison,secret government computer,entire police department,criminal justice system,local police chief,-1,-0.2,1,1,1,1,1
+38,beautiful barbara bouchet,4,NA,NA,beautiful barbara bouchet,NA,NA,-1,-1,0,0,1,0,0
+41,political boss frank,5,NA,NA,political boss frank,NA,NA,-1,-1,0,0,1,0,0
+53,short blonde hair,6,NA,short blonde hair,NA,NA,NA,-1,-1,0,1,0,0,0
+54,late night tv,7,late night television,late night movie,early cbs game,original prom night,prime time soap,1,0.2,1,1,1,1,1
+63,ready to go,8,ready to go,afraid to go,ready to fight,sure to send,ready to make,-1,-0.2,1,1,1,1,1
+66,beautiful music score,9,mexican hat dance,beautiful music score,NA,NA,excellent music score,-1,-0.333333333,1,1,0,0,1
+79,american pie movie,10,american pie franchise,american pie movie,american pop culture,american pie beta,american pie series,-1,-0.2,1,1,1,1,1
+84,easy to make,11,easy to do,easy to get,easy to like,easy to follow,easy to take,2,0.4,1,1,1,1,1
+91,petra von kant,12,NA,NA,NA,petra von kant,NA,-1,-1,0,0,0,1,0
+93,good movie i,13,good date movie,other film i,same film i,real movie i,entire movie i,1,0.2,1,1,1,1,1
+102,grinch stole christmas,14,grinch stole christmas,NA,NA,NA,NA,0,0,1,0,0,0,0
+104,lee j cobb,15,NA,NA,ll cool j,cathy lee crosby,lee j cobb,0,0,0,0,1,1,1
+114,local tv station,16,NA,local tv station,NA,local bus station,local television station,-1,-0.333333333,0,1,0,1,1
+130,awful film i,17,horrible movie experience,truly awful movie,entire film i,absolutely awful film,incredible film i,0,0,1,1,1,1,1
+143,very little thought,18,be little doubt,very thought provoking,very big fan,little girl i,very little chance,2,0.4,1,1,1,1,1
+153,able to find,19,able to escape,able to succeed,unable to see,able to locate,able to capture,0,0,1,1,1,1,1
+163,notorious bettie page,20,NA,notorious bettie page,real bettie page,NA,NA,0,0,0,1,1,0,0
+170,anyway i havent,21,i havent heard,NA,i havent read,now i havent,anyway i havent,0,0,1,0,1,1,1
+180,painful to watch,22,painful to see,unpleasant to watch,horrible to watch,painful to watch,unbearable to watch,0,0,1,1,1,1,1
+186,very funny movie,23,very funny man,very funny film,very fun movie,very funny show,funny movie i,4,0.8,1,1,1,1,1
+195,good character development,24,excellent character study,good character development,little character development,poor character development,actual character development,5,1,1,1,1,1,1
+200,dull dull dull,25,NA,dull dull dull,NA,NA,NA,0,0,0,1,0,0,0
+202,sure to see,26,eager to see,anxious to see,likely to see,awesome to see,sure to catch,0,0,1,1,1,1,1
+219,able to have,27,able to control,unable to control,early to mid,sure to have,impossible to have,0,0,1,1,1,1,1
+221,enrico ratso rizzo,28,NA,NA,enrico ratso rizzo,NA,NA,0,0,0,0,1,0,0
+225,fatal car crash,29,fatal car crash,fatal heart attack,NA,tow truck driver,terrible car accident,0,0,1,1,0,1,1
+231,brian jonestown massacre,30,NA,NA,NA,brian jonestown massacre,NA,0,0,0,0,0,1,0
+249,cary grant myrna,31,cary grant victor,NA,NA,cary grant myrna,NA,0,0,1,0,0,1,0
+272,indian burial ground,32,indian burial ground,NA,NA,NA,NA,-1,-1,1,0,0,0,0
+277,great science fiction,33,mystery science theater,golden age fiction,great science fiction,british science fiction,good science fiction,0,0,1,1,1,1,1
+279,hard to come,34,hard to like,hard to enjoy,hard to think,hard to hear,hard to stomach,0,0,1,1,1,1,1
+280,low budget movie,35,big budget film,low budget movie,low budget indie,low budget porno,low budget horror,0,0,1,1,1,1,1
+284,lok simon yam,36,NA,lok simon yam,NA,NA,NA,0,0,0,1,0,0,0
+290,very good performance,37,very good quality,very nice score,very fine performance,really good overall,very good performance,5,1,1,1,1,1,1
+301,wonderful love story,38,romantic love story,sweet love story,beautiful love story,find true love,great love story,0,0,1,1,1,1,1
+309,adam sandler movie,39,huge adam sandler,NA,NA,neil simon comedy,adam sandler movie,-1,-0.333333333,1,0,0,1,1
+315,very good story,40,very sad story,really good story,very good story,very simple story,not much story,4,0.8,1,1,1,1,1
+317,not much blood,41,not much blood,first blood part,rare blood type,true heart bear,noble heart horse,0,0,1,1,1,1,1
+320,splatter rampage wrestling,42,NA,splatter rampage wrestling,NA,NA,NA,0,0,0,1,0,0,0
+321,first world war,43,american history x,second world war,cold war paranoia,first world war,NA,0,0,1,1,1,1,0
+323,original version i,44,original version i,original dirty harry,original series i,english language version,original carlitos way,0,0,1,1,1,1,1
+324,tim blake nelson,45,NA,NA,ken paine craig,tim blake nelson,joe don baker,0,0,0,0,1,1,1
+326,multiple personality disorder,46,NA,NA,multiple personality disorder,NA,NA,0,0,0,0,1,0,0
+327,british film industry,47,british film institute,british film industry,italian exploitation cinema,australian film industry,british horror film,0,0,1,1,1,1,1
+329,old vhs tape,48,NA,old vhs tape,NA,NA,old vhs copy,0,0,0,1,0,0,1
+343,mobile suit gundam,49,mobile suit gundam,NA,NA,NA,NA,0,0,1,0,0,0,0
+346,explicit sex scene,50,fairly explicit sex,nude sex scene,obligatory sex scene,lesbian sex scene,explicit sex scene,5,1,1,1,1,1,1
+361,too much time,51,just enough time,too much sex,too much time,much eye makeup,too much power,2,0.4,1,1,1,1,1
+378,there high school,52,high school kid,high school coach,high school girl,high school film,high school baseball,0,0,1,1,1,1,1
+379,christian slater tara,53,christian slater tara,NA,NA,NA,NA,0,0,1,0,0,0,0
+383,academy award winner,54,golden globe winning,NA,grand jury prize,academy award nomination,academy award winner,0,0,1,0,1,1,1
+389,denial anger acceptance,55,NA,NA,NA,NA,denial anger acceptance,0,0,0,0,0,0,1
+413,very slow pace,56,very fast pace,very slow pace,fast forward button,slow pace i,slow motion versus,0,0,1,1,1,1,1
+426,new york city,57,new york subway,new york life,new england town,new york apartment,new york strip,0,0,1,1,1,1,1
+428,huge box office,58,dead letter office,NA,NA,huge box office,big box office,0,0,1,0,0,1,1
+437,fat boy run,59,NA,big boy caprice,big fat greek,fat boy run,NA,0,0,0,1,1,1,0
+448,soft core porn,60,NA,NA,NA,NA,soft core porn,0,0,0,0,0,0,1
+466,good camera work,61,right analog stick,awful camera work,shaky camera work,bad camera work,good camera work,0,0,1,1,1,1,1
+471,nice to look,62,cool to look,very nice touch,nice to listen,nice to watch,interesting to look,0,0,1,1,1,1,1
+492,really bad i,63,pretty bad i,really bad script,bad guy i,painful experience i,not bad i,0,0,1,1,1,1,1
+507,really cool zombie,64,really cool zombie,cool zombie twist,really cool movie,NA,cool hand luke,0,0,1,1,1,0,1
+513,much to do,65,much to ask,little to recommend,interesting to do,much to bear,much to work,0,0,1,1,1,1,1
+526,just cant think,66,i cant wait,i cant help,just cant think,honestly cant think,still cant get,0,0,1,1,1,1,1
+529,philip seymour hoffman,67,NA,NA,NA,NA,philip seymour hoffman,0,0,0,0,0,0,1
+542,main plot line,68,original plot line,main selling point,basic plot line,main plot line,predictable plot line,0,0,1,1,1,1,1
+544,emotional roller coaster,69,NA,NA,NA,emotional roller coaster,NA,0,0,0,0,0,1,0
+554,mariscal del infierno,70,mariscal del infierno,NA,el fondo del,NA,NA,0,0,1,0,1,0,0
+564,enough to get,71,lucky to get,enough to get,enough to pass,enough to buy,enough to drive,-1,-0.2,1,1,1,1,1
+576,so im glad,72,only reason im,so im glad,im glad i,same time im,i guess im,0,0,1,1,1,1,1
+579,final fight scene,73,final fantasy vii,final fight scene,final battle sequence,triple threat match,silent night bloody,0,0,1,1,1,1,1
+583,le mouton enrage,74,NA,NA,le mouton enrage,NA,NA,0,0,0,0,1,0,0
+584,osama bin laden,75,NA,NA,NA,NA,osama bin laden,0,0,0,0,0,0,1
+605,previously worthless island,76,NA,NA,NA,previously worthless island,NA,0,0,0,0,0,1,0
+611,very good film,77,very good drama,good action film,very good actress,very good thriller,great film making,5,1,1,1,1,1,1
+618,pretty much nothing,78,almost complete lack,so much fun,almost perfect guy,really isnt anything,pretty much nothing,2,0.4,1,1,1,1,1
+634,so many hollywood,79,certain entertainment value,so many clichés,melodramatic hollywood production,so many horror,only other movie,0,0,1,1,1,1,1
+662,first time i,80,first place i,third time i,first scene i,play second fiddle,second viewing i,0,0,1,1,1,1,1
+675,so low budget,81,pretty low budget,relatively low budget,really low budget,low budget shot,low budget production,0,0,1,1,1,1,1
+681,real life i,82,then real life,real thing i,wonderful life i,so real i,real life i,0,0,1,1,1,1,1
+696,former college roommate,83,NA,NA,former college roommate,old college roommate,NA,0,0,0,0,1,1,0
+702,loyal fan base,84,NA,loyal fan base,NA,NA,NA,0,0,0,1,0,0,0
+708,good horror movie,85,silent movie star,good horror movie,decent horror film,psychological horror thriller,first horror movie,0,0,1,1,1,1,1
+735,good vs evil,86,NA,good versus evil,good vs evil,NA,freddy vs jason,0,0,0,1,1,0,1
+736,difficult to know,87,necessary to know,difficult to like,difficult to put,difficult to do,difficult to write,0,0,1,1,1,1,1
+747,good family film,88,good family show,great family entertainment,perfect family film,middle class family,great family movie,0,0,1,1,1,1,1
+748,good supporting cast,89,good supporting cast,only cast member,strong supporting cast,good casting choice,excellent supporting cast,0,0,1,1,1,1,1
+755,independent film festival,90,international film festival,national film preservation,independent film festival,ann arbor film,NA,0,0,1,1,1,1,0
+767,edward d wood,91,edward d wood,edward g robinson,big d tony,william h macy,edward everett horton,0,0,1,1,1,1,1
+773,snowy river ii,92,NA,NA,NA,snowy river ii,NA,0,0,0,0,0,1,0
+792,great movie i,93,great train robbery,not great art,great movie dont,really great movie,great date movie,0,0,1,1,1,1,1
+799,catchy theme song,94,NA,catchy theme song,NA,main theme song,NA,0,0,0,1,0,1,0
+803,funny to see,95,entertaining to see,funny to begin,funny to see,fun to hear,interesting to note,0,0,1,1,1,1,1
+804,bunny foo foo,96,bunny foo foo,NA,NA,NA,NA,0,0,1,0,0,0,0
+812,hickory dickory dock,97,NA,NA,NA,hickory dickory dock,NA,0,0,0,0,0,1,0
+814,billy sunday robert,98,NA,billy bob thornton,NA,daniel day lewis,billy sunday robert,-1,-0.333333333,0,1,0,1,1
+826,last picture show,99,NA,big slide show,major motion picture,baby face nelson,last picture show,0,0,0,1,1,1,1
+849,morgan gene tierney,100,NA,NA,NA,morgan gene tierney,NA,0,0,0,0,0,1,0
+854,wong kar wai,101,NA,wong kar wai,NA,NA,NA,0,0,0,1,0,0,0
+859,felix benet bela,102,NA,NA,felix benet bela,NA,NA,0,0,0,0,1,0,0
+872,entirely different sort,103,completely different direction,NA,entirely different sort,NA,totally different story,3,1,1,0,1,0,1
+879,superb character actor,104,great character actor,superb character actor,veteran character actor,NA,NA,3,1,1,1,1,0,0
+885,marie juliette binoche,105,marie juliette binoche,NA,NA,NA,NA,0,0,1,0,0,0,0
+891,wild bill hickock,106,wild bill hickok,NA,NA,NA,wild bill hickock,0,0,1,0,0,0,1
+892,fantastic mr fox,107,fantastic mr fox,amazing mr williams,NA,NA,NA,-1,-0.5,1,1,0,0,0
+919,very good way,108,pretty good show,very interesting way,very different way,pretty good idea,very good one,4,0.8,1,1,1,1,1
+926,young john wayne,109,young john wayne,young mr lincoln,albert rupert friend,young scarlett johansson,late john ritter,-1,-0.2,1,1,1,1,1
+928,very long time,110,very long time,very difficult time,short running time,very long way,really long time,0,0,1,1,1,1,1
+932,nuclear power plant,111,NA,NA,NA,NA,nuclear power plant,0,0,0,0,0,0,1
+962,able to make,112,able to provide,white to colour,able to maintain,impossible to take,able to bring,-1,-0.2,1,1,1,1,1
+965,good companion piece,113,NA,great companion piece,NA,NA,good companion piece,0,0,0,1,0,0,1
+985,mad dog time,114,mad dog time,NA,NA,mad mad mad,dog bite dog,0,0,1,0,0,1,1
+991,sure to watch,115,free to watch,good to watch,cool to watch,impossible to watch,fun to watch,0,0,1,1,1,1,1
+1000,good to say,116,lead to believe,first to say,pleased to say,suffice to say,good to have,0,0,1,1,1,1,1
+1007,classic ghost story,117,classic story i,classic fairy tale,great ghost story,chinese ghost story,classic ghost story,0,0,1,1,1,1,1
+1019,straight to video,118,straight to tv,canadian home video,direct to dvd,straight to dvd,direct to video,0,0,1,1,1,1,1
+1025,f scott fitzgerald,119,seann william scott,f scott fitzgerald,gary f taylor,NA,f murray abraham,0,0,1,1,1,0,1
+1039,steve buscemi rosario,120,NA,NA,NA,NA,steve buscemi rosario,0,0,0,0,0,0,1
+1047,mian mai fu,121,NA,mian mai fu,NA,NA,NA,0,0,0,1,0,0,0
+1053,various cigarette debris,122,NA,retrieve various cigarette,NA,various cigarette debris,NA,0,0,0,1,0,1,0
+1067,only thing i,123,same mistake i,only other person,only problem i,sole reason i,last thing i,-1,-0.2,1,1,1,1,1
+1072,first lion king,124,original lion king,NA,NA,first lion king,godfather part iii,0,0,1,0,0,1,1
+1100,very little plot,125,very simple plot,pretty much plot,not much plot,very predictable plot,too many plot,0,0,1,1,1,1,1
+1118,sarah silverman program,126,sarah silverman program,NA,NA,NA,NA,0,0,1,0,0,0,0
+1119,ramgopal varma ki,127,NA,ramgopal varma ki,NA,NA,NA,0,0,0,1,0,0,0
+1127,i dont think,128,i dont think,i dont mean,really dont understand,i dont feel,again i dont,-1,-0.2,1,1,1,1,1
+1135,ed wood jr,129,ed wood jr,sammy davis jr,louis gossett jr,ed begley jr,robert downey jr,0,0,1,1,1,1,1
+1137,mary tyler moore,130,cole bruce willis,mary lou prom,arden patrick wilson,late dudley moore,mary tyler moore,0,0,1,1,1,1,1
+1149,comic book movie,131,comic relief character,comic book story,comic book series,comic book style,underground comedy movie,0,0,1,1,1,1,1
+1165,20th century fox,132,20th century france,twentieth century fox,20th century fox,18th century france,NA,0,0,1,1,1,1,0
+1177,ed wood film,133,david lynch film,ed wood film,ed wood movie,hal hartley film,tim burton film,0,0,1,1,1,1,1
+1190,so much money,134,just enough money,so much talent,make enough money,not enough money,very little money,0,0,1,1,1,1,1
+1193,unceremoniously sent packing,135,NA,unceremoniously sent packing,NA,NA,NA,0,0,0,1,0,0,0
+1197,very talented actor,136,very talented actress,talented actor i,very talented actor,very talented cast,very talented director,0,0,1,1,1,1,1
+1200,magician sid waterman,137,NA,magician sid waterman,NA,NA,NA,0,0,0,1,0,0,0
+1210,willing to take,138,afraid to ask,willing to put,willing to give,willing to overlook,willing to accept,0,0,1,1,1,1,1
+1215,melissa sue anderson,139,melissa sue anderson,NA,melissa joan hart,NA,NA,0,0,1,0,1,0,0
+1222,small town life,140,small town life,small town girl,small town sheriff,small town america,NA,-1,-0.25,1,1,1,1,0
+1239,first half hour,141,NA,final half hour,first half hour,full half hour,half hour i,0,0,0,1,1,1,1
+1240,only redeeming quality,142,NA,single redeeming quality,only redeeming quality,only redeeming feature,only redeeming factor,0,0,0,1,1,1,1
+1255,public health service,143,secret service agent,public health service,kikis delivery service,public health doctor,NA,0,0,1,1,1,1,0
+1261,helena bonham carter,144,NA,NA,NA,helena bonham carter,NA,0,0,0,0,0,1,0
+1263,goodnight mister tom,145,NA,NA,NA,goodnight mister tom,NA,0,0,0,0,0,1,0
+1266,modesty blaise character,146,NA,modesty blaise character,NA,modesty blaise movie,NA,0,0,0,1,0,1,0
+1288,i guess i,147,pleasantly surprised i,sure glad i,really glad i,i feel sorry,i doubt i,0,0,1,1,1,1,1
+1302,dick van dyke,148,jean claude van,casper van dien,van der beek,gus van sant,dick van dyke,0,0,1,1,1,1,1
+1321,enough screen time,149,big screen treatment,much screen time,screen time i,enough screen time,very limited screen,0,0,1,1,1,1,1
+1328,sure to be,150,suppose to be,worthy to be,happy to be,proud to be,short to be,-1,-0.2,1,1,1,1,1
+1335,breathtakingly bizarre till,151,NA,NA,NA,breathtakingly bizarre till,NA,0,0,0,0,0,1,0
+1339,old man winter,152,old dark house,old security guard,old man winter,dead man walking,old studio system,-1,-0.2,1,1,1,1,1
+1342,serial killer movie,153,serial killer movie,serial killer david,serial killer genre,NA,NA,0,0,1,1,1,0,0
+1350,same kim ki,154,same kim ki,NA,NA,NA,NA,0,0,1,0,0,0,0
+1364,original tv series,155,naked gun series,elm street series,scifi tv series,british tv show,original tv series,0,0,1,1,1,1,1
+1373,mentally retarded man,156,NA,mentally retarded man,NA,NA,NA,0,0,0,1,0,0,0
+1379,neon genesis evangelion,157,neon genesis evangelion,NA,NA,NA,NA,0,0,1,0,0,0,0
+1381,so dont waste,158,so dont waste,NA,dont waste time,please dont waste,dont waste money,1,0.25,1,0,1,1,1
+1405,same story line,159,main story line,new line cinema,great story line,unpredictable story line,whole story line,0,0,1,1,1,1,1
+1410,very bad movie,160,very bad joke,pretty bad film,really bad movie,truly bad film,very bad movie,0,0,1,1,1,1,1
+1454,red rock west,161,deep blue sea,red sox fan,big rock candy,young rock hudson,red rock west,0,0,1,1,1,1,1
+1455,so good i,162,very glad i,so hard i,so bored i,excellent job i,too long i,-1,-0.2,1,1,1,1,1
+1458,next action star,163,second death star,next action star,last action hero,major league team,original star trek,0,0,1,1,1,1,1
+1475,saturday night friday,164,lazy sunday afternoon,saturday night fever,saturday morning cartoon,saturday night friday,saturday night live,0,0,1,1,1,1,1
+1492,nicely nicely johnson,165,NA,NA,nicely nicely johnson,NA,NA,0,0,0,0,1,0,0
+1500,blah blah blah,166,blah blah blah,NA,NA,NA,NA,0,0,1,0,0,0,0
+1508,full length feature,167,full metal jacket,full length movie,first feature length,full length film,full length feature,0,0,1,1,1,1,1
+1509,invisible man story,168,thin man series,incredible melting man,invisible man story,martian man hunter,big stinking man,0,0,1,1,1,1,1
+1529,i didnt think,169,say i didnt,i didnt rate,i didnt care,i didnt pay,just didnt work,0,0,1,1,1,1,1
+1534,very small role,170,very small part,very small amount,very important part,very small role,very different role,0,0,1,1,1,1,1
+1537,special edition dvd,171,NA,recent dvd release,NA,special edition dvd,NA,0,0,0,1,0,1,0
+1539,first degree murder,172,first response assault,NA,first degree murder,manhattan murder mystery,NA,0,0,1,0,1,1,0
+1540,third muppet movie,173,NA,great muppet caper,NA,NA,third muppet movie,0,0,0,1,0,0,1
+1543,live action movie,174,live action footage,live action film,live action movie,stop motion animation,live action version,0,0,1,1,1,1,1
+1563,very interesting movie,175,very entertaining film,highly entertaining movie,rather enjoyable movie,really interesting movie,very nice movie,5,1,1,1,1,1,1
+1581,able to understand,176,necessary to tell,able to speak,able to feel,able to overlook,able to forgive,0,0,1,1,1,1,1
+1602,true jane eyre,177,true jane eyre,NA,NA,novel jane eyre,NA,0,0,1,0,0,1,0
+1605,first guinea pig,178,NA,NA,first guinea pig,NA,NA,0,0,0,0,1,0,0
+1614,uwe boll movie,179,NA,uwe boll movie,NA,NA,NA,0,0,0,1,0,0,0
+1634,hot air balloon,180,NA,NA,NA,hot air balloon,NA,0,0,0,0,0,1,0
+1640,real estate office,181,NA,NA,real estate agent,real estate office,NA,0,0,0,0,1,1,0
+1649,local book store,182,NA,NA,local video store,local book store,NA,0,0,0,0,1,1,0
+1650,blue raja hank,183,NA,NA,blue raja hank,NA,NA,0,0,0,0,1,0,0
+1651,crazy taoist monk,184,crazy taoist monk,NA,NA,NA,NA,0,0,1,0,0,0,0
+1659,hong kong film,185,NA,NA,hong kong film,hong kong cinema,hk action film,0,0,0,0,1,1,1
+1661,mighty morphin power,186,NA,NA,NA,mighty morphin power,NA,0,0,0,0,0,1,0
+1662,last time i,187,same time period,too late i,other night i,very last scene,last scene i,0,0,1,1,1,1,1
+1667,very first film,188,second unit director,only other film,foreign language film,first film role,first film i,2,0.4,1,1,1,1,1
