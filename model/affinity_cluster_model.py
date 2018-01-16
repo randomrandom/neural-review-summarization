@@ -30,7 +30,7 @@ class AffinityClusterModel(BaseModel, GloveMixin):
     _GOOD_WORD_KEY = 'GW{}'
     _WORD_KEY = 'W{}'
     _GOOD_CLUSTER_THRESHOLD = 0.2
-    _DIRECTORY = '/mnt/c/Users/gvs/ubuntu/neural-review-summarization/model/saved/'
+    _DIRECTORY = 'saved/' # '/mnt/c/Users/gvs/ubuntu/neural-review-summarization/model/saved/'
     _AFFINITY_CLUSTER_CENTERS = 'cluster_centers.csv'
     _AFFINITY_CLUSTER_LABELS = 'phrase_cluster_labels.csv'
     _AFFINITY_MODEL_PKL = '_affinity_model.pkl'
