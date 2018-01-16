@@ -4,7 +4,7 @@ __author__ = 'georgi.val.stoyan0v@gmail.com'
 
 class GloveMixin(BaseEmbeddingsMixin):
     _EMB_MODEL_NAME = 'GloVe'
-    _EMB_DIRECTORY = 'embeddings/'
+    _EMB_DIRECTORY = 'model/embeddings/'
     _EMB_FILE_NAME = 'glove.6B.300d.txt'
 
     def __init__(self, directory=_EMB_DIRECTORY, file_name=_EMB_FILE_NAME):
